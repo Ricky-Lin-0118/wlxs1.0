@@ -1,0 +1,326 @@
+<!--pages/home/home.wxml-->
+<!-- 搜索框 -->
+<view class="search-container">
+  <input class="search-input" type="text" placeholder="情感困扰与关系问题" value="{{keyword}}" bindinput="handleInput"/>
+  <button class="search-btn" bindtap="handleSearch">搜索</button>
+</view>
+
+<!-- 滚动栏 -->
+<swiper class="swiper" indicator-dots=" " autoplay circular>
+  <swiper-item>
+    <image src="../../image/2.png" class="img1"></image>
+  </swiper-item>
+  <swiper-item>item2</swiper-item>
+  <swiper-item>item3</swiper-item>
+</swiper>
+
+<!-- 主题图标&链接 -->
+<view class="icon-container">
+  <view class="icon-grid">
+  <navigator url="../market/market">
+    <view class="icon-wrapper">
+      <image src="../../icon/Group 23.svg" class="icon"  />
+      <text class="icon-text">情感</text>
+    </view>
+  </navigator>
+  <navigator url="../market/market">
+    <view class="icon-wrapper">
+      <image src="../../icon/Group 24.svg" class="icon" />
+      <text class="icon-text">家庭</text>
+    </view>
+  </navigator>
+  <navigator url="../market/market">
+    <view class="icon-wrapper">
+      <image src="../../icon/Group 27.svg" class="icon"  />
+      <text class="icon-text">学习</text>
+    </view>
+  </navigator>
+  <navigator url="../market/market">
+    <view class="icon-wrapper">
+      <image src="../../icon/Group 28.svg" class="icon" />
+      <text class="icon-text">人际</text>
+    </view>
+  </navigator>
+  <navigator url="../market/market">
+    <view class="icon-wrapper">
+      <image src="../../icon/Group 30.svg" class="icon" />
+      <text class="icon-text">职场</text>
+    </view>
+  </navigator>
+  <navigator url="../market/market">
+    <view class="icon-wrapper">
+      <image src="../../icon/Group 31.svg" class="icon"  />
+      <text class="icon-text">成长</text>
+    </view>
+  </navigator>
+  <navigator url="../market/market">
+    <view class="icon-wrapper">
+      <image src="../../icon/Group 34.svg" class="icon" />
+      <text class="icon-text">失眠</text>
+    </view>
+  </navigator>
+  <navigator url="../market/market">
+    <view class="icon-wrapper">
+      <image src="../../icon/Group 36.svg" class="icon"  />
+      <text class="icon-text">规划</text>
+    </view>
+  </navigator>
+  <navigator url="../market/market">
+    <view class="icon-wrapper">
+      <image src="../../icon/Group 39.svg" class="icon" />
+      <text class="icon-text">倾诉</text>
+    </view>
+  </navigator>
+  <navigator url="../market/market">
+    <view class="icon-wrapper">
+      <image src="../../icon/Group 37.svg" class="icon" />
+      <text class="icon-text">其它</text>
+    </view>
+  </navigator>
+</view>
+</view>
+
+<!-- 倾听疏导 -->
+<view class="container1">
+  <view class="title">
+    <text class="title1">倾听疏导</text>
+  </view>
+  <!-- 第一块区域 -->
+  <navigator url="../market/market" class="area">
+    <view class="avatar-area">
+      <image src="../../image/白榆.png" class="avatar" />
+    </view>
+    <view class="info-area">
+      <view class="info-area1">
+        <text class="name">白榆</text>
+        <text class="duration">服务时长：100小时</text>
+      </view>
+      <view class="intro">
+        <text class="intro">心理学硕士学位，并在多个知名的心理咨询机构积累了丰富的工作经验。通过系统的学习的实践...</text>
+      </view>
+      <view class="info-area1">
+        <text class="tags">情感</text>
+        <text class="tags">婚恋</text>
+        <text class="tags">失恋</text>
+      </view>
+    </view>
+  </navigator>
+  <!-- 第二块区域 -->
+  <navigator url="../market/market" class="area">
+    <view class="avatar-area">
+      <image src="../../image/白榆.png" class="avatar" />
+    </view>
+    <view class="info-area">
+      <view class="info-area1">
+        <text class="name">白榆</text>
+        <text class="duration">服务时长：100小时</text>
+      </view>
+      <view class="intro">
+        <text class="intro">心理学硕士学位，并在多个知名的心理咨询机构积累了丰富的工作经验。通过系统的学习的实践...</text>
+      </view>
+      <view class="info-area1">
+        <text class="tags">情感</text>
+        <text class="tags">婚恋</text>
+        <text class="tags">失恋</text>
+      </view>
+    </view>
+  </navigator>
+  <!-- 第三块区域 -->
+  <navigator url="../market/market" class="area">
+    <view class="avatar-area">
+      <image src="../../image/白榆.png" class="avatar" />
+    </view>
+    <view class="info-area">
+      <view class="info-area1">
+        <text class="name">白榆</text>
+        <text class="duration">服务时长：100小时</text>
+      </view>
+      <view class="intro">
+        <text class="intro">心理学硕士学位，并在多个知名的心理咨询机构积累了丰富的工作经验。通过系统的学习的实践...</text>
+      </view>
+      <view class="info-area1">
+        <text class="tags">情感</text>
+        <text class="tags">婚恋</text>
+        <text class="tags">失恋</text>
+      </view>
+    </view>
+  </navigator>
+  <!-- 第四块区域 -->
+  <view class="getMore">
+    <navigator url="../market/market">更多倾听者</navigator>
+  </view>
+</view>
+
+<!-- 分析建议 -->
+<view class="container1">
+  <view class="title" style="background: linear-gradient(to bottom right, #b6e2e6, #ffffff 70%);">
+    <text class="title1" >分析建议</text>
+  </view>
+  <!-- 第一块区域 -->
+  <navigator url="../market/market" class="area">
+    <view class="avatar-area">
+      <image src="../../image/白榆.png" class="avatar" />
+    </view>
+    <view class="info-area">
+      <view class="info-area1">
+        <text class="name">白榆</text>
+        <text class="duration">服务时长：100小时</text>
+      </view>
+      <view class="intro">
+        <text class="intro">心理学硕士学位，并在多个知名的心理咨询机构积累了丰富的工作经验。通过系统的学习的实践...</text>
+      </view>
+      <view class="info-area1">
+        <text class="tags2">情感</text>
+        <text class="tags2">婚恋</text>
+        <text class="tags2">失恋</text>
+      </view>
+    </view>
+  </navigator>
+  <!-- 第二块区域 -->
+  <navigator url="../market/market" class="area">
+    <view class="avatar-area">
+      <image src="../../image/白榆.png" class="avatar" />
+    </view>
+    <view class="info-area">
+      <view class="info-area1">
+        <text class="name">白榆</text>
+        <text class="duration">服务时长：100小时</text>
+      </view>
+      <view class="intro">
+        <text class="intro">心理学硕士学位，并在多个知名的心理咨询机构积累了丰富的工作经验。通过系统的学习的实践...</text>
+      </view>
+      <view class="info-area1">
+        <text class="tags2">情感</text>
+        <text class="tags2">婚恋</text>
+        <text class="tags2">失恋</text>
+      </view>
+    </view>
+  </navigator>
+  <!-- 第三块区域 -->
+  <navigator url="../market/market" class="area">
+    <view class="avatar-area">
+      <image src="../../image/白榆.png" class="avatar" />
+    </view>
+    <view class="info-area">
+      <view class="info-area1">
+        <text class="name">白榆</text>
+        <text class="duration">服务时长：100小时</text>
+      </view>
+      <view class="intro">
+        <text class="intro">心理学硕士学位，并在多个知名的心理咨询机构积累了丰富的工作经验。通过系统的学习的实践...</text>
+      </view>
+      <view class="info-area1">
+        <text class="tags2">情感</text>
+        <text class="tags2">婚恋</text>
+        <text class="tags2">失恋</text>
+      </view>
+    </view>
+  </navigator>
+  <!-- 第四块区域 -->
+  <view class="getMore">
+   <navigator url="../market/market">更多分析者</navigator>
+  </view>
+</view>
+
+
+<!-- 热门咨询师 -->
+<view class="container1">
+  <view class="title" style="background: linear-gradient(to bottom right, #a5d1b3, #ffffff 80%); ">
+    <text class="title1" >热门咨询师</text>
+  </view>
+  <!-- 第一块区域 -->
+  <navigator url="../market/market" class="area">
+    <view class="avatar-area">
+      <view class="top-label" style="background-color: red;">工作室</view>
+      <image src="../../image/白榆.png" class="avatar" />
+      <view class="bottom-label" style="background-color: pink;">女 37岁</view>
+    </view>
+    <view class="info-area">
+      <view class="info-area1">
+        <text class="name">白榆 </text>
+        <text class="name" style="margin-left:20rpx;">情感分析师</text>
+      </view>
+      <view> 
+        <text class="duration">好评率：100%</text>
+        <text class="duration">服务时长：100小时</text>
+        <text class="duration">评论：1145条</text>
+      </view>
+      <view class="intro">
+        <text class="intro">已婚有孩</text>
+        <text style="margin-left: 10rpx;">|</text>
+        <text style="margin-left: 10rpx;">处女座</text>
+      </view>
+      <!-- 便签不能弄两行，后续需要修改 -->
+      <view class="info-area1">
+        <text class="tags3" style="background-color: pink; padding: 14rpx 12rpx;">白榆心理情感工作室</text>
+        <text class="tags3">情感修复 </text>
+        <text class="tags3">情感修复 </text>
+      </view>
+    </view>
+  </navigator>
+  <!-- 第二块区域 -->
+  <navigator url="../market/market" class="area">
+    <view class="avatar-area">
+      <view class="top-label" style="background-color: red;">工作室</view>
+      <image src="../../image/白榆.png" class="avatar" />
+      <view class="bottom-label" style="background-color: pink;">女 37岁</view>
+    </view>
+    <view class="info-area">
+      <view class="info-area1">
+        <text class="name">白榆 </text>
+        <text class="name" style="margin-left:20rpx;">情感分析师</text>
+      </view>
+      <view> 
+        <text class="duration">好评率：100%</text>
+        <text class="duration">服务时长：100小时</text>
+        <text class="duration">评论：1145条</text>
+      </view>
+      <view class="intro">
+        <text class="intro">已婚有孩</text>
+        <text style="margin-left: 10rpx;">|</text>
+        <text style="margin-left: 10rpx;">处女座</text>
+      </view>
+      <!-- 便签不能弄两行，后续需要修改 -->
+      <view class="info-area1">
+        <text class="tags3" style="background-color: pink; padding: 14rpx 12rpx;">白榆心理情感工作室</text>
+        <text class="tags3">情感修复 </text>
+        <text class="tags3">情感修复 </text>
+      </view>
+    </view>
+  </navigator>
+  <!-- 第三块区域 -->
+  <navigator url="../market/market" class="area">
+    <view class="avatar-area">
+      <view class="top-label" style="background-color: red;">工作室</view>
+      <image src="../../image/白榆.png" class="avatar" />
+      <view class="bottom-label" style="background-color: pink;">女 37岁</view>
+    </view>
+    <view class="info-area">
+      <view class="info-area1">
+        <text class="name">白榆 </text>
+        <text class="name" style="margin-left:20rpx;">情感分析师</text>
+      </view>
+      <view> 
+        <text class="duration">好评率：100%</text>
+        <text class="duration">服务时长：100小时</text>
+        <text class="duration">评论：1145条</text>
+      </view>
+      <view class="intro">
+        <text class="intro">已婚有孩</text>
+        <text style="margin-left: 10rpx;">|</text>
+        <text style="margin-left: 10rpx;">处女座</text>
+      </view>
+      <!-- 便签不能弄两行，后续需要修改 -->
+      <view class="info-area1">
+        <text class="tags3" style="background-color: pink; padding: 14rpx 12rpx;">白榆心理情感工作室</text>
+        <text class="tags3">情感修复 </text>
+        <text class="tags3">情感修复 </text>
+      </view>
+    </view>
+  </navigator>
+  <!-- 第四块区域 -->
+  <view class="getMore">
+   <navigator url="../market/market">更多咨询师</navigator>
+  </view>
+</view>
+

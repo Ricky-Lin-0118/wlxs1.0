@@ -1,0 +1,70 @@
+/* pages/login/login.wxss */
+.header{
+  height: 200rpx;
+  padding:40rpx 30rpx;
+  display: flex;
+  flex-direction: column;
+  background-color:#73ccd8 ;
+  color: white;
+}
+.title{
+  font-size: 52rpx;
+  font-weight: 700;
+  padding: 20rpx;
+}
+.header .info{
+font-size:28rpx ;
+padding: 20rpx;
+}
+.body{
+  padding: 40rpx;
+}
+.input{
+  margin-top: 20rpx;
+
+}
+.one{
+height: 100rpx;
+  margin-top: 20rpx;
+  box-shadow: #77778a 0 0 5rpx;
+  border-radius: 10rpx;
+  position: relative; /* 添加这行 */
+}
+.two{
+  border: solid 1rpx #73ccd8;
+  margin-top: 40rpx;
+  width: 100%;
+  background-color: #73ccd8;
+  border-radius: 40rpx;
+}
+.end{
+  display: flex;
+  justify-content: center;
+  margin-top: 40rpx;
+ color: #9f9f9f;
+}
+.end text{
+  margin-left:30rpx;
+}
+.end-power{
+  display: flex;
+ justify-content: center;
+}
+.power{
+color: #d6d6d6;
+position: fixed;
+bottom: 50rpx;
+
+}
+.remenber{
+  margin-top: 20rpx;
+}
+.password-icon {
+  position: absolute;
+  right: 30px; /* 调整图标距离密码框右边的距离 */
+  top: 35%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+  z-index: 2; /* 将图标的层级设置为比密码框更高  1->2 */
+}

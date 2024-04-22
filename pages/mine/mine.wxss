@@ -1,0 +1,41 @@
+/* pages/mine/mine.wxss */
+.container1 view{
+  width: 200rpx;
+  height: 200rpx;
+  text-align: center;
+  line-height: 200rpx;
+}
+.container1 view:nth-child(1){
+  background-color: lightblue;
+}
+.container1 view:nth-child(2){
+  background-color: lightgreen;
+}
+.container1 view:nth-child(3){
+  background-color: lightpink;
+}
+.container1 {
+  display: flex;
+  width: 100px;
+  height: 100px;
+}
+
+.container2 view{
+  width: 200rpx;
+  height: 200rpx;
+  text-align: center;
+  line-height: 200rpx;
+}
+.container2 view:nth-child(1){
+  background-color: lightblue;
+}
+.container2 view:nth-child(2){
+  background-color: lightgreen;
+}
+.container2 view:nth-child(3){
+  background-color: lightpink;
+}
+.container2{
+  display: flex;
+  justify-content: space-around;
+}

@@ -1,0 +1,74 @@
+/* pages/dialog/dialog.wxss */
+/* .button-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: flex-start;
+  padding: 20rpx 20rpx 0;
+  background-color: #ffffff;
+  z-index: 999;
+} */
+.button-container {
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: flex-start; /* 垂直居上 */
+  height: 100rpx; /* 按钮容器的高度 */
+}
+
+
+.button {
+  padding: 10rpx 20rpx;
+  border-radius: 20rpx;
+  background-color: #f0f0f0;
+}
+
+.button-text {
+  font-size: 30rpx;
+}
+
+.page-scroll,.page-scroll2 {
+  flex: 1;
+}
+.active {
+  font-size: 38rpx; /* 点击时文字放大 */
+}
+
+
+.container1 {
+  padding: 20rpx 20rpx;
+  background-color: rgba(128, 128, 128, 0.096);
+  border-radius: 20rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tag1 {
+  font-size: 35rpx;
+  font-weight: 550;
+}
+
+.index {
+  padding: 10rpx;
+  border-radius: 50%;
+  color: white;
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  margin-left: -10rpx;
+}
+.body-thing {
+  margin: 20rpx;
+  display: flex;
+  align-items: center; /* 垂直居中 */
+}
+.sen1 {
+  margin-left: 20rpx;
+  font-size: 28rpx;
+}

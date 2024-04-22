@@ -1,0 +1,41 @@
+<!--pages/dialog/dialog.wxml-->
+
+<view class="button-container">
+    <view class="button" bindtap="switchToPage1">
+      <text class="button-text {{currentTab === 0 ? 'active' : ''}}">助手</text>
+    </view>
+    <view class="button" bindtap="switchToPage2">
+      <text class="button-text {{currentTab === 1 ? 'active' : ''}}">历史</text>
+    </view>
+</view>
+
+<view class="container1">
+  <view class="header">
+    <view>
+      <text class="tag1">猜你想问</text>
+    </view>
+    <view>
+      <text class="tag2">换一换</text>
+    </view>
+  </view>
+  <view class="body">
+    <view class="body-thing">
+      <view class="index" style="background-color: #FAAAAA">
+        <text class="tag1">1</text>
+      </view>
+      <view class="sen1">我很难控制情绪，常常因为小事而发脾气</view>
+    </view>
+    <view class="body-thing">
+      <text class="index" style="background-color: #C8D7FF">2</text>
+      <text class="sen1">如何平衡工作和生活</text>
+    </view>
+    <view class="body-thing">
+      <text class="index" style="background-color: #CDECFE;">3</text>
+      <text class="sen1">如何建立健康的人际关系</text>
+    </view>
+    <view class="body-thing">
+      <text class="index" style="color: #999999;">4</text>
+      <text class="sen1">如何提高自己对心理健康问题的重视程度</text>
+    </view>
+  </view>
+</view>

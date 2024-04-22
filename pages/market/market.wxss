@@ -1,0 +1,472 @@
+/* pages/market/market.wxss */
+/* 总按钮 */
+.container3 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 70rpx;
+}
+
+.container4 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 200rpx;
+}
+
+.button-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-start;
+  padding: 20rpx 20rpx 0;
+  background-color: #ffffff;
+  z-index: 999; /* 使按钮置顶 */
+}
+
+.button {
+  padding: 10rpx 20rpx;
+  border-radius: 20rpx;
+  background-color: #f0f0f0;
+}
+
+.button1 {
+  padding: 10rpx 20rpx;
+  border-radius: 20rpx;
+}
+
+.button2 {
+  padding: 10rpx 20rpx;
+  border-radius: 20rpx;
+  background-color: white;
+
+}
+
+.button-text {
+  font-size: 40rpx;
+  color: rgba(0, 0, 0, 0.486);
+}
+
+.button-text1 {
+  font-size: 30rpx;
+  padding: 10rpx 10rpx;
+  border-radius: 20rpx;
+  color: rgba(0, 0, 0, 0.486);
+}
+
+.page-scroll,.page-scroll2 {
+  flex: 1;
+}
+.active {
+  font-size: 50rpx; /* 点击时文字放大 */
+  border-bottom: 10rpx solid rgba(96, 150, 231, 0.363); /* 分割线 */
+  color: black;
+}
+
+/* 主题选择 */
+
+.topic-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10rpx;
+  padding: 120rpx 8rpx 10rpx 8rpx;
+  margin-top: 20rpx; /* 向上移动 20rpx */
+}
+
+.block {
+  background-color: #42acf38e;
+  border-radius: 20rpx;
+  padding: 20rpx;
+  text-align: center;
+}
+
+.title {
+  font-size: 30rpx;
+  font-weight: bold;
+  color: white;
+  white-space: nowrap; /* 禁止标题换行 */
+}
+
+.subtitle {
+  font-size: 21rpx;
+  color: white;
+  white-space: nowrap; /* 禁止副标题换行 */
+}
+
+/* 局部按钮 */
+.button-container2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-start;
+  padding: 30rpx 20rpx 10rpx;
+  background-color: #ffffff;
+  z-index: 999; /* 使按钮置顶 */
+
+}
+.container2 {
+  position: relative;
+
+  /* 其他样式属性 */
+}
+.active2 {
+  background-color: #066cf03a;
+  color: #000;
+}
+
+/* 推荐&关注帖子 */
+/* .post-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10rpx;
+  padding: 150rpx 8rpx 10rpx 8rpx;
+  margin-top: 0rpx; 
+} */
+
+.post-container {
+  width: 97%; /* 让框更大一些 */
+  max-height: 600rpx; /* 让框更大一些 */
+  border: 1rpx solid #ccc;
+  border-radius: 10rpx;
+  margin-bottom: 30rpx;
+  margin-top: -80rpx;
+  overflow: hidden;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10rpx;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatar-image {
+  width: 100%;
+  height: 100%;
+}
+
+.info {
+  margin-left: 10rpx;
+}
+
+.name {
+  font-size: 30rpx;
+  color: #333;
+  margin-left: 8rpx;
+}
+
+.time {
+  font-size: 18rpx;
+  color: rgb(179, 178, 178);
+  margin-left: 10rpx;
+  
+}
+
+.delete-icon {
+  width: 36rpx;
+  height: 36rpx;
+  margin-right: 10rpx;
+  margin-bottom: 30rpx;
+  /* background-image: url('../../image/delete-icon.png'); */
+}
+
+.post-content {
+  padding: 0rpx 10rpx 0rpx;
+}
+
+.image-container {
+  margin-top: 5rpx;
+  margin-bottom: 5rpx;
+}
+
+.content-image {
+  height: 175rpx;
+  width: 220rpx; /* 设置图片高度为框上下间距的一半 */
+  border-radius: 20rpx;
+  padding-right: 10rpx;
+}
+
+.title2 {
+  font-size: 40rpx;
+  font-weight: 540;
+  color: #333;
+  margin-bottom: 20rpx; /* 增加标题和内容的间距 */
+}
+
+.content {
+  font-size: 24rpx;
+  color: #666;
+  margin-bottom: 20rpx;
+  margin-top: 20rpx;
+  line-height: 1.3;
+
+}
+
+.post-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rpx 10rpx 10rpx;
+  margin-bottom: 20rpx;
+}
+
+.footer-top {
+  display: flex;
+}
+
+.tag {
+  font-size: 20rpx;
+  color: rgb(128, 126, 126);
+  margin-right: 10rpx;
+  background-color: rgb(189, 185, 185);
+  border-radius: 10rpx;
+  padding: 6rpx;
+}
+
+.viewers {
+  font-size: 22rpx;
+  color: #999;
+  margin-left: 6rpx;
+  margin-top: 4rpx;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+}
+
+.like-icon,
+.comment-icon {
+  width: 36rpx;
+  height: 36rpx;
+  margin-right: 16rpx;
+}
+
+.like-count,
+.comment-count {
+  font-size: 20rpx;
+  color: #999;
+  margin-right: 10rpx;
+}
+
+
+
+
+
+
+
+
+.container1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  padding-top: 120rpx;
+  padding-left: 40rpx;
+  padding-bottom: 20rpx;
+  margin-top: 20rpx;
+}
+
+.tab-scroll {
+  overflow: hidden;
+  width: 570rpx;
+}
+
+.tab-item {
+  display: inline-block;
+  padding: 10rpx 20rpx;
+  margin-right: 20rpx;
+  border-radius: 20rpx;
+  background-color: #f0f0f0;
+}
+
+.filter-btn {
+  display: inline-block;
+  padding: 10rpx 20rpx 10rpx 30rpx;
+  color: #000000;
+
+}
+
+.dropdown {
+  z-index: 999;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+}
+
+.dropdown-item {
+  padding: 10rpx 20rpx;
+  border-top: 1px solid #ddd;
+}
+
+.test1 {
+  flex: 1;
+}
+
+.flex-wrp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.dropdown {
+  display: none; /* 默认隐藏 */
+  width: 100%; /* 撑满容器宽度 */
+  padding: 20rpx;
+  background-color: #4422db;
+}
+
+.container2 {
+  display: flex;
+  height: 1000rpx;
+}
+
+.tag1 {
+  font-size: 25rpx;
+  color: rgb(128, 126, 126);
+  margin-right: 10rpx;
+  background-color: rgba(44, 155, 219, 0.205);
+  border-radius: 10rpx;
+  padding: 6rpx;
+}
+
+.viewers1 {
+  font-size: 25rpx;
+  color: rgba(153, 153, 153, 0.521);
+  margin-left: 6rpx;
+  margin-top: 4rpx;
+}
+
+.i {
+  width: 100vw; 
+  height: 100vh;
+}
+
+.image1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.message1 {
+  font-size: 25rpx;
+  color: rgba(23, 131, 255, 0.993);
+  margin-right: 10rpx;
+  background-color: rgba(12, 158, 255, 0.336);
+  border-radius: 20rpx;
+  padding: 6rpx;
+}
+
+.footer1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 10rpx 10rpx;
+}
+
+.left {
+  display: flex;
+  padding-left: 20rpx;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  padding-right: 20rpx;
+}
+
+
+
+
+.area {
+  display: flex;
+  padding: 12rpx;
+}
+.avatar-area {
+  margin-right: 20rpx;
+}
+.avatar1 {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50rpx; /* 设置头像为圆形 */
+}
+.info-area {
+  display: flex;
+  flex-direction: column; /* 子元素垂直方向排列 */
+  justify-content: space-between; /* 垂直方向上均匀分布子元素 */
+}
+.info-area1{
+  display: flex;
+  align-items: center; /* 子元素水平居中对齐 */
+}
+.name1 {
+  font-size: 30rpx;
+  font-weight: 550;
+  color: rgb(44, 44, 44);
+  margin-bottom: 10rpx;
+}
+
+.duration {
+  font-size: 24rpx;
+  background-color: lightgray;
+  color: white;
+  border-radius: 8rpx; /* 设置边框的弧度 */
+  margin-left: 20rpx; /* 设置姓名和工作时长之间的间距 */
+  padding: 4rpx 4rpx 4rpx 4rpx; /* 设置内边距 */
+}
+.intro {
+  font-size: 24rpx;
+  color: #666;
+  margin-bottom: 10rpx;
+  margin-top: 10rpx;
+}
+.tags {
+  font-size: 24rpx;
+  background-color: lightskyblue;
+  color: rgb(43, 41, 41);
+  border-radius: 16rpx; /* 设置边框的弧度 */
+  margin-left: 20rpx; /* 设置姓名和工作时长之间的间距 */
+  padding: 6rpx 12rpx 6rpx 12rpx; /* 设置内边距 */
+}
+.getMore{
+  display: flex;
+  justify-content: center;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+ color: #9f9f9f;
+}
+
+.tag2 {
+  font-size: smaller;
+}
+
+.area1 {
+  display: flex;
+  padding: 12rpx;
+  justify-content: center;
+  border-bottom: 1rpx solid #ccc; /* 分割线 */
+}
+
+.blank {
+  height: 30rpx;
+}
