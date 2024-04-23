@@ -12,5 +12,7 @@
   <view>F</view>
 </view>
 
-<view>  </view>
+<view></view>
 <navigator url="../login/login" open-type="navigate">点击跳转到登录注册</navigator>
+
+<counseling model:src="wdasdsa"></counseling>

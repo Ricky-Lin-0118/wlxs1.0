@@ -1,0 +1,13 @@
+<!--components/search/search.wxml-->
+
+<view class="search-container">
+  <input class="search-input" type="text" placeholder="情感困扰与关系问题" value="{{keyword}}" bindinput="handleInput"/>
+  <button class="search-btn" bindtap="handleSearch">搜索</button>
+</view>
+
+<view wx:if="{{ searchResult.length > 5 }}">
+  <view>搜索结果：</view>
+  <view wx:for="{{ searchResult }}" wx:key="index">
+    <view>{{ item.name }}</view>
+  </view>
+</view>

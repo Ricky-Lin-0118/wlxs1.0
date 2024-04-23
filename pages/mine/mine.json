@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "counseling":"../../components/counseling/counseling"
+  }
 }

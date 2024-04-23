@@ -1,0 +1,27 @@
+/* components/search/search.wxss */
+
+/* 搜索 */
+.search-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.search-input {
+  flex: 7;
+  height: 40px;
+  padding: 0 50px 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 18px;
+  margin-right: 10px;
+}
+.search-btn {
+  flex: 1;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 5px;
+  background-color: transparent; /* 设置背景色为透明 */
+  color: rgb(145, 141, 141);
+  border: none; /* 取消边框 */
+  border-radius: 5px;
+  cursor: pointer;
+}

@@ -1,0 +1,110 @@
+<!--components/counseling/counseling.wxml-->
+<!-- 倾听疏导 -->
+<view class="container1">
+  <view class="title">
+    <text class="title1">倾听疏导</text>
+    <text>{{test2.length}}</text>
+  </view>
+  <!-- 第一块区域 -->
+  <view wx:for="{{ counselor1 }}" wx:key="id" wx:for-item="first">
+  <navigator url="../market/market" class="area" >
+    <view class="avatar-area">
+      <image src="{{first.src}}" class="avatar" />
+    </view>
+    <view class="info-area">
+      <view class="info-area1">
+        <text class="name">{{first.name}}</text>
+        <text class="duration">服务时长{{first.serviceTime}}小时</text>
+      </view>
+      <view class="intro">
+        <text class="intro">{{first.introContent}}</text>
+      </view>
+      <view class="info-area1">
+        <block wx:for="{{ first.tags }}" wx:key="id" wx:for-item="second">
+          <text class="tags">{{ second.tag }}</text>
+        </block>
+      </view>
+    </view>
+  </navigator>
+  </view>
+    <!-- 第四块区域 -->
+    <view class="getMore">
+      <navigator url="../market/market">更多倾听者</navigator>
+    </view>
+</view>
+
+<!-- 分析建议 -->
+<view class="container1">
+  <view class="title" style="background: linear-gradient(to bottom right, #b6e2e6, #ffffff 70%);">
+    <text class="title1" >分析建议</text>
+  </view>
+  <view wx:for="{{ counselor1 }}" wx:key="id" wx:for-item="first">
+  <navigator url="../market/market" class="area" >
+    <view class="avatar-area">
+      <image src="{{first.src}}" class="avatar" />
+    </view>
+    <view class="info-area">
+      <view class="info-area1">
+        <text class="name">{{first.name}}</text>
+        <text class="duration">服务时长{{first.serviceTime}}小时</text>
+      </view>
+      <view class="intro">
+        <text class="intro">{{first.introContent}}</text>
+      </view>
+      <view class="info-area1">
+        <block wx:for="{{ first.tags }}" wx:key="id" wx:for-item="second">
+          <text class="tags2">{{ second.tag }}</text>
+        </block>
+      </view>
+    </view>
+  </navigator>
+  </view>
+    <!-- 第四块区域 -->
+    <view class="getMore">
+   <navigator url="../market/market">更多分析者</navigator>
+  </view>
+</view>
+
+<!-- 热门咨询师 -->
+<view class="container1">
+  <view class="title" style="background: linear-gradient(to bottom right, #a5d1b3, #ffffff 80%); ">
+    <text class="title1" >热门咨询师</text>
+  </view>
+  <!-- 第一块区域 -->
+  <view wx:for="{{ counselor2 }}" wx:key="id" wx:for-item="first">
+  <navigator url="../market/market" class="area">
+    <view class="avatar-area">
+      <view class="top-label" style="background-color: red;">工作室</view>
+      <image src="{{first.src}}" class="avatar" />
+      <view class="bottom-label" style="background-color: pink;">{{first.gender}} {{first.age}}岁</view>
+    </view>
+    <view class="info-area">
+      <view class="info-area1">
+        <text class="name">{{first.name}} </text>
+        <text class="name" style="margin-left:20rpx;">{{first.profession}}</text>
+      </view>
+      <view> 
+        <text class="duration">好评率：{{first.favorableRate}}%</text>
+        <text class="duration">服务时长：{{first.serviceTime}}小时</text>
+        <text class="duration">评论：{{first.comment}}条</text>
+      </view>
+      <view class="intro">
+        <text class="intro">{{first.maritalStatus}}</text>
+        <text style="margin-left: 10rpx;">|</text>
+        <text style="margin-left: 10rpx;">{{first.constellation}}</text>
+      </view>
+      <!-- 便签不能弄两行，后续需要修改 -->
+      <view class="info-area1">
+        <text class="tags3" style="background-color: pink; padding: 14rpx 12rpx;">{{first.studio}}</text>
+        <block wx:for="{{ first.labels }}" wx:key="id" wx:for-item="second">
+          <text class="tags3">{{ second.label }}</text>
+        </block>
+      </view>
+    </view>
+  </navigator>
+  </view>
+    <!-- 第四块区域 -->
+  <view class="getMore">
+    <navigator url="../market/market">更多咨询师</navigator>
+  </view>
+</view>
