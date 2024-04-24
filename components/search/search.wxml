@@ -2,7 +2,7 @@
 
 <view class="search-container">
   <input class="search-input" type="text" placeholder="情感困扰与关系问题" value="{{keyword}}" bindinput="handleInput"/>
-  <button class="search-btn" bindtap="handleSearch">搜索</button>
+  <button class="search-btn" bindtap="handleSearch" style="border: none;">搜索</button>
 </view>
 
 <view wx:if="{{ searchResult.length > 5 }}">

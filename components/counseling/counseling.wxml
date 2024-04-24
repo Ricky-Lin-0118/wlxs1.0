@@ -35,7 +35,7 @@
 
 <!-- 分析建议 -->
 <view class="container1">
-  <view class="title" style="background: linear-gradient(to bottom right, #b6e2e6, #ffffff 70%);">
+  <view class="title" style="background: linear-gradient(to bottom right, #c1e9ec, #ffffff 80%);">
     <text class="title1" >分析建议</text>
   </view>
   <view wx:for="{{ counselor1 }}" wx:key="id" wx:for-item="first">
@@ -67,7 +67,7 @@
 
 <!-- 热门咨询师 -->
 <view class="container1">
-  <view class="title" style="background: linear-gradient(to bottom right, #a5d1b3, #ffffff 80%); ">
+  <view class="title" style="background: linear-gradient(to bottom right, #b2e6c3, #ffffff 80%); ">
     <text class="title1" >热门咨询师</text>
   </view>
   <!-- 第一块区域 -->
