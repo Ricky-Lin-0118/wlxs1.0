@@ -2,12 +2,15 @@
 <!-- 第一部分 -->
 <!-- 顶部按钮 -->
 <view class="button-container">
-  <view class="button2" bindtap="switchToPage1">
-    <text class="button-text {{currentTab === 0 ? 'active' : ''}}">集市</text>
+  <view class="button-container1">
+    <view class="button" bindtap="switchToPage1">
+      <text class="button-text {{currentTab === 0 ? 'active' : ''}}">集市</text>
+    </view>
+    <view class="button" bindtap="switchToPage2">
+      <text class="button-text {{currentTab === 1 ? 'active' : ''}}">疏导</text>
+    </view>
   </view>
-  <view class="button2" bindtap="switchToPage2">
-    <text class="button-text {{currentTab === 1 ? 'active' : ''}}">疏导</text>
-  </view>
+  <image style="width: 70rpx; height: 70rpx; margin-top: 30rpx;" src="http://pic.funworld.cc/pic/Group 40.svg" alt="" />
 </view>
 
 <!-- 页面内容 -->
@@ -46,170 +49,23 @@
     <!-- 推荐&关注 -->
     <!-- 按钮会穿模，有bug -->
     <!-- 按钮 -->
-    <view class="container2">
-      <view class="button-container2">
-        <view class="button2" bindtap="switchToSubPage1">
-          <text class="button-text1 {{currentTab2 === 0 ? 'active2' : ''}}">推荐</text>
-        </view>
-        <view class="button2" bindtap="switchToSubPage2">
-          <text class="button-text1 {{currentTab2 === 1 ? 'active2' : ''}}">关注</text>
-        </view>
+    <view class="button-container2">
+      <view class="button" bindtap="switchToSubPage1">
+        <text class="sub-button-text {{currentTab2 === 0 ? 'sub-active' : ''}}">推荐</text>
       </view>
-
+      <view class="button" bindtap="switchToSubPage2">
+        <text class="sub-button-text {{currentTab2 === 1 ? 'sub-active' : ''}}">关注</text>
+      </view>
+    </view>
+    <view class="sub-container">
       <!-- 内容 -->
-      <scroll-view class="page-scroll2" scroll-x="true" scroll-with-animation="{{true}}">
-        <!-- 子页面1内容 -->
-        <view wx:if="{{currentTab2 === 0}}">
-          <view class="container4">
-            <!-- 帖子框 -->
-            <view class="post-container">
-              <!-- 第一部分 -->
-              <view class="post-header">
-                <view class="header-left">
-                  <view class="avatar">
-                    <image class="avatar-image" src="../../image/白榆.png"></image>
-                  </view>
-                  <view class="info">
-                    <text class="name">白榆</text>
-                    <text class="time">32分钟前</text>
-                  </view>
-                </view>
-                <view class="delete-icon" bindtap="deletePost">
-                  <image class="delete-icon" src="../../icon/Group 16.svg" bindtap="deletePost"></image>
-                </view>
-              </view>
-              <!-- 第二部分 -->
-              <navigator url="../temp/temp1/temp1">
-                <!-- 设置跳转链接 -->
-                <view class="post-content">
-                  <text class="title2">分手了不知道该怎么办</text>
-                  <view class="content">
-                    <text class="content">我们一个月多前分的，因为她觉得我冷落她了，但是她后来又来找我了，所以我以为是小打小闹的。然后上上个星期因为我打游戏没陪她，她确实多次叫我不要打去陪陪她，然...</text>
-                  </view>
-                </view>
-              </navigator>
-              <!-- 第三部分 -->
-              <view class="post-footer">
-                <view class="footer-top">
-                  <text class="tag1">#学习交流</text>
-                  <text class="viewers1">223人围观</text>
-                </view>
-                <view class="footer-bottom">
-                  <view class="actions">
-                    <image class="like-icon" src="../../icon/点赞.png" bindtap="toggleLike"></image>
-                    <text class="like-count">45</text>
-                    <image class="comment-icon" src="../../icon/评论.png" bindtap="comment"></image>
-                    <text class="comment-count">12</text>
-                  </view>
-                </view>
-              </view>
-            </view>
-          </view>
-          <!-- 此处可继续接帖子框 -->
-          <view class="container3">
-            <!-- 帖子框 -->
-            <view class="post-container">
-              <!-- 第一部分 -->
-              <view class="post-header">
-                <view class="header-left">
-                  <view class="avatar">
-                    <image class="avatar-image" src="../../image/白榆.png"></image>
-                  </view>
-                  <view class="info">
-                    <text class="name">白榆</text>
-                    <text class="time">32分钟前</text>
-                  </view>
-                </view>
-                <view class="delete-icon" bindtap="deletePost">
-                  <image class="delete-icon" src="../../icon/Group 16.svg" bindtap="deletePost"></image>
-                </view>
-              </view>
-              <!-- 第二部分 -->
-              <navigator url="../temp/temp1/temp1">
-                <!-- 设置跳转链接 -->
-                <view class="post-content">
-                  <text class="title2">学习交流——共筑知识之桥</text>
-                  <view class="image-container">
-                    <image class="content-image" src="../../image/知识1.png"></image>
-                    <image class="content-image" src="../../image/知识2.png"></image>
-                    <image class="content-image" src="../../image/知识3.png"></image>
-                    <!-- 可以添加更多的图片 -->
-                  </view>
-                  <view class="content">
-                    <text class="content">学习，是每个人成长道路上不可或缺的一部分。在这个信息爆炸的时代，如何高效学习、如何与他人进行有效的学习交流，已成为我们共同关注的焦点。今天，我愿与大家分享...</text>
-                  </view>
-                </view>
-              </navigator>
-              <!-- 第三部分 -->
-              <view class="post-footer">
-                <view class="footer-top">
-                  <text class="tag1">#学习交流</text>
-                  <text class="viewers1">223人围观</text>
-                </view>
-                <view class="footer-bottom">
-                  <view class="actions">
-                    <image class="like-icon" src="../../icon/点赞.png" bindtap="toggleLike"></image>
-                    <text class="like-count">45</text>
-                    <image class="comment-icon" src="../../icon/评论.png" bindtap="comment"></image>
-                    <text class="comment-count">12</text>
-                  </view>
-                </view>
-              </view>
-            </view>
-          </view>
-          <!--第三部分-->
-          <view class="container3">
-            <!-- 帖子框 -->
-            <view class="post-container">
-              <!-- 第一部分 -->
-              <view class="post-header">
-                <view class="header-left">
-                  <view class="avatar">
-                    <image class="avatar-image" src="../../image/白榆.png"></image>
-                  </view>
-                  <view class="info">
-                    <text class="name">白榆</text>
-                    <text class="time">32分钟前</text>
-                  </view>
-                </view>
-                <view class="delete-icon" bindtap="deletePost">
-                  <image class="delete-icon" src="../../icon/Group 16.svg" bindtap="deletePost"></image>
-                </view>
-              </view>
-              <!-- 第二部分 -->
-              <navigator url="../temp/temp1/temp1">
-                <!-- 设置跳转链接 -->
-                <view class="post-content">
-                  <text class="title2">分手了不是知道该怎么办</text>
-                  <view class="content">
-                    <text class="content">我们一个月多前分的，因为她觉得我冷落她了，但是她后来又来找我了，所以我以为是小打小闹的。然后上上个星期因为我打游戏没陪她，她确实多次叫我不要打去陪陪她，然...</text>
-                  </view>
-                </view>
-              </navigator>
-              <!-- 第三部分 -->
-              <view class="post-footer">
-                <view class="footer-top">
-                  <text class="tag1">#学习交流</text>
-                  <text class="viewers1">223人围观</text>
-                </view>
-                <view class="footer-bottom">
-                  <view class="actions">
-                    <image class="like-icon" src="../../icon/点赞.png" bindtap="toggleLike"></image>
-                    <text class="like-count">45</text>
-                    <image class="comment-icon" src="../../icon/评论.png" bindtap="comment"></image>
-                    <text class="comment-count">12</text>
-                  </view>
-                </view>
-              </view>
-            </view>
-          </view>
-        </view>
-
-        <!-- 子页面2内容 -->
-        <view wx:else>
-          <view>关注</view>
-          <!-- 页面2的内容 -->
-        </view>
+      <!-- 子页面1内容 -->
+      <scroll-view class="page-scroll2" scroll-x="true" scroll-with-animation="{{true}}" wx:if="{{currentTab2 === 0}}">
+        <recommend></recommend>
+      </scroll-view>
+      <!-- 子页面2内容 -->
+      <scroll-view class="page-scroll2" scroll-x="true" scroll-with-animation="{{true}}" wx:else>
+        
       </scroll-view>
     </view>
 
@@ -234,192 +90,7 @@
       </view>
     </view>
 
-    <view class="container2" style="flex-direction: column;">
-      <view class="i">
-        <image class="image1" src="../../image/1.png" style="display: block;max-width: 100%;">
-        </image>
-      </view>
-      <view class="footer1">
-        <view class="left">
-          <text class="tag1">#情感倾诉</text>
-          <text class="viewers1">223人围观</text>
-        </view>
-        <view class="right">
-          <text class="message1">私信TA</text>
-        </view>
-      </view>
-      <navigator url="../market/market" class="area">
-        <view class="avatar-area">
-          <image src="../../image/狗.png" class="avatar" />
-        </view>
-        <view class="info-area">
-          <view class="info-area1">
-            <text class="name">只要he</text>
-          </view>
-          <view class="intro">
-            <text class="intro">倾听是交流的基础，只有认真倾听他人的发言，我们才能理解他人的想法和需求</text>
-          </view>
-        </view>
-      </navigator>
-      <!-- 第二块区域 -->
-      <navigator url="../market/market" class="area">
-        <view class="avatar-area">
-          <image src="../../image/狗.png" class="avatar" />
-        </view>
-        <view class="info-area">
-          <view class="info-area1">
-            <text class="name">只要he</text>
-          </view>
-          <view class="intro">
-            <text class="intro">倾听是交流的基础，只有认真倾听他人的发言，我们才能理解他人的想法和需求</text>
-          </view>
-        </view>
-      </navigator>
-      <!-- 第三块区域 -->
-      <navigator url="../market/market" class="area">
-        <view class="avatar-area">
-          <image src="../../image/狗.png" class="avatar" />
-        </view>
-        <view class="info-area">
-          <view class="info-area1">
-            <text class="name">只要he</text>
-          </view>
-          <view class="intro">
-            <text class="intro">倾听是交流的基础，只有认真倾听他人的发言，我们才能理解他人的想法和需求</text>
-          </view>
-        </view>
-      </navigator>
-      <!--第四块区域-->
-      <navigator url="../market/market" class="area1">
-        <text class="tag2">查看全部2268条评论</text>
-      </navigator>
-    </view>
-
-    <view class="blank"></view>
-
-    <view class="container2" style="flex-direction: column;">
-      <view class="i">
-        <image class="image1" src="../../image/1.png" style="display: block;max-width: 100%;">
-        </image>
-      </view>
-      <view class="footer1">
-        <view class="left">
-          <text class="tag1">#情感倾诉</text>
-          <text class="viewers1">223人围观</text>
-        </view>
-        <view class="right">
-          <text class="message1">私信TA</text>
-        </view>
-      </view>
-      <navigator url="../market/market" class="area">
-        <view class="avatar-area">
-          <image src="../../image/狗.png" class="avatar" />
-        </view>
-        <view class="info-area">
-          <view class="info-area1">
-            <text class="name">只要he</text>
-          </view>
-          <view class="intro">
-            <text class="intro">倾听是交流的基础，只有认真倾听他人的发言，我们才能理解他人的想法和需求</text>
-          </view>
-        </view>
-      </navigator>
-      <!-- 第二块区域 -->
-      <navigator url="../market/market" class="area">
-        <view class="avatar-area">
-          <image src="../../image/狗.png" class="avatar" />
-        </view>
-        <view class="info-area">
-          <view class="info-area1">
-            <text class="name">只要he</text>
-          </view>
-          <view class="intro">
-            <text class="intro">倾听是交流的基础，只有认真倾听他人的发言，我们才能理解他人的想法和需求</text>
-          </view>
-        </view>
-      </navigator>
-      <!-- 第三块区域 -->
-      <navigator url="../market/market" class="area">
-        <view class="avatar-area">
-          <image src="../../image/狗.png" class="avatar" />
-        </view>
-        <view class="info-area">
-          <view class="info-area1">
-            <text class="name">只要he</text>
-          </view>
-          <view class="intro">
-            <text class="intro">倾听是交流的基础，只有认真倾听他人的发言，我们才能理解他人的想法和需求</text>
-          </view>
-        </view>
-      </navigator>
-      <!--第四块区域-->
-      <navigator url="../market/market" class="area1">
-        <text class="tag2">查看全部2268条评论</text>
-      </navigator>
-    </view>
-
-    <view class="blank"></view>
-
-    <view class="container2" style="flex-direction: column;">
-      <view class="i">
-        <image class="image1" src="../../image/1.png" style="display: block;max-width: 100%;">
-        </image>
-      </view>
-      <view class="footer1">
-        <view class="left">
-          <text class="tag1">#情感倾诉</text>
-          <text class="viewers1">223人围观</text>
-        </view>
-        <view class="right">
-          <text class="message1">私信TA</text>
-        </view>
-      </view>
-      <navigator url="../market/market" class="area">
-        <view class="avatar-area">
-          <image src="../../image/狗.png" class="avatar" />
-        </view>
-        <view class="info-area">
-          <view class="info-area1">
-            <text class="name">只要he</text>
-          </view>
-          <view class="intro">
-            <text class="intro">倾听是交流的基础，只有认真倾听他人的发言，我们才能理解他人的想法和需求</text>
-          </view>
-        </view>
-      </navigator>
-      <!-- 第二块区域 -->
-      <navigator url="../market/market" class="area">
-        <view class="avatar-area">
-          <image src="../../image/狗.png" class="avatar" />
-        </view>
-        <view class="info-area">
-          <view class="info-area1">
-            <text class="name">只要he</text>
-          </view>
-          <view class="intro">
-            <text class="intro">倾听是交流的基础，只有认真倾听他人的发言，我们才能理解他人的想法和需求</text>
-          </view>
-        </view>
-      </navigator>
-      <!-- 第三块区域 -->
-      <navigator url="../market/market" class="area">
-        <view class="avatar-area">
-          <image src="../../image/狗.png" class="avatar" />
-        </view>
-        <view class="info-area">
-          <view class="info-area1">
-            <text class="name">只要he</text>
-          </view>
-          <view class="intro">
-            <text class="intro">倾听是交流的基础，只有认真倾听他人的发言，我们才能理解他人的想法和需求</text>
-          </view>
-        </view>
-      </navigator>
-      <!--第四块区域-->
-      <navigator url="../market/market" class="area1">
-        <text class="tag2">查看全部2268条评论</text>
-      </navigator>
-    </view>
+    <guide></guide>
 
   </view>
 </scroll-view>

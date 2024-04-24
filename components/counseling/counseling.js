@@ -61,7 +61,11 @@ Component({
     labels:{
       type:Array,
       value:[]
-    }
+    },
+    // counselor1: {
+    //   type: Array,
+    //   value: []
+    // }
   },
 
   /**
@@ -160,8 +164,8 @@ Component({
         constellation: '天蝎座',
         studio: '工作室2',
         labels: [
-          { id: 3, label: '标签3' },
-          { id: 4, label: '标签4' },
+          { id: 5, label: '标签5' },
+          { id: 6, label: '标签6' },
           // 可以根据需要添加更多的标签数据
         ]
       }

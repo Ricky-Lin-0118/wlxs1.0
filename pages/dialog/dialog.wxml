@@ -39,3 +39,7 @@
     </view>
   </view>
 </view>
+
+<view>
+  <dialog-input></dialog-input>
+</view>

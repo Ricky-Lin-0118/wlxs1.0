@@ -4,25 +4,26 @@
 .search-container {
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding: 10rpx;
+  margin-bottom: 20rpx;
 }
 .search-input {
   flex: 7;
-  height: 40px;
-  padding: 0 50px 0 10px;
-  border: 1px solid #ccc;
-  border-radius: 18px;
-  margin-right: 10px;
+  height: 40rpx;
+  padding: 0 50rpx 0 10rpx;
+  border: 1rpx solid #ccc;
+  border-radius: 18rpx;
+  margin-right: 10rpx;
 }
 .search-btn {
   flex: 1;
-  height: 40px;
-  line-height: 40px;
-  padding: 0 5px;
+  height: 40rpx;
+  line-height: 40rpx;
+  padding: 0 5rpx;
   background-color: transparent; /* 设置背景色为透明 */
   color: rgb(145, 141, 141);
   border: none; /* 取消边框 */
-  border-radius: 5px;
+  border-radius: 5rpx;
   cursor: pointer;
 }
 
@@ -47,8 +48,7 @@ swiper-item:nth-child(3){
 .icon-container {
   border: 3px solid #ccc; /* 设置边框 */
   border-radius: 30rpx; /* 设置边框的弧度 */
-  padding: 10px 5px 0 5px; /* 设置内边距 */
-  margin: 10px 0; /* 设置外边距，控制边框的位置 */
+  padding: 10rpx 5rpx 0 5rpx; /* 设置内边距 */
   padding-bottom: 20rpx;
 }
 .icon-grid {
@@ -58,12 +58,12 @@ swiper-item:nth-child(3){
   align-items: center; /* 图标和文字在垂直方向上居中对齐 */
 }
 .icon {
-  width: 50px;
-  height: 50px;
-  margin: 10px; /* 调整图标之间的间距 */
+  width: 80rpx;
+  height: 80rpx;
+  margin: 30rpx; /* 调整图标之间的间距 */
 }
 .icon-text {
-  font-size: 12px; /* 设置文字大小 */
+  font-size: 25rpx; /* 设置文字大小 */
   margin-top: 8rpx; /* 设置文字与图标之间的间距 */
 }
 .icon-wrapper {

@@ -74,9 +74,9 @@
   <view wx:for="{{ counselor2 }}" wx:key="id" wx:for-item="first">
   <navigator url="../market/market" class="area">
     <view class="avatar-area">
-      <view class="top-label" style="background-color: red;">工作室</view>
+      <view class="top-label" style="background-color: rgb(250, 139, 139); border-radius: 10rpx;">工作室</view>
       <image src="{{first.src}}" class="avatar" />
-      <view class="bottom-label" style="background-color: pink;">{{first.gender}} {{first.age}}岁</view>
+      <view class="bottom-label" style="background-color: pink; border-radius: 10rpx;">{{first.gender}} {{first.age}}岁</view>
     </view>
     <view class="info-area">
       <view class="info-area1">

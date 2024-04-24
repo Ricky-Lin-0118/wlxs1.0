@@ -26,7 +26,20 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    wx.request({
+      url: 'https://api.funworld.cc:5000/mind_post/0',
+      method: 'GET',
+      success: (res) => {
+        // 接口请求成功，将数据传递给页面
+        this.setData({
+          counselor1: res.data.counselor1
+        });
+      },
+      fail: (err) => {
+        // 接口请求失败，可以进行错误处理
+        console.error('请求失败：', err);
+      }
+    });
   },
 
   /**

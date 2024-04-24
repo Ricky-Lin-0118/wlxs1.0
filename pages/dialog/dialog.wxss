@@ -1,13 +1,4 @@
 /* pages/dialog/dialog.wxss */
-/* .button-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  justify-content: flex-start;
-  padding: 20rpx 20rpx 0;
-  background-color: #ffffff;
-  z-index: 999;
-} */
 .button-container {
   display: flex;
   justify-content: center; /* 水平居中 */
@@ -15,22 +6,22 @@
   height: 100rpx; /* 按钮容器的高度 */
 }
 
-
 .button {
   padding: 10rpx 20rpx;
   border-radius: 20rpx;
-  background-color: #f0f0f0;
 }
 
 .button-text {
-  font-size: 30rpx;
+  font-size: 40rpx;
+  font-weight: 600;
+  color: #999999;
 }
 
 .page-scroll,.page-scroll2 {
   flex: 1;
 }
 .active {
-  font-size: 38rpx; /* 点击时文字放大 */
+  color: black;
 }
 
 
@@ -47,8 +38,12 @@
   align-items: center;
 }
 .tag1 {
-  font-size: 35rpx;
-  font-weight: 550;
+  font-size: 37rpx;
+  font-weight: 540;
+}
+.tag2 {
+  font-size: small;
+  color: #777777;
 }
 
 .index {

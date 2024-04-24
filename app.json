@@ -7,6 +7,7 @@
     "pages/mine/mine",
     "pages/market/market",
     "pages/dialog/dialog",
+   
     "pages/temp/temp",
     "pages/temp/temp1/temp1",
     "pages/temp/temp2/temp2"
@@ -49,7 +50,7 @@
       }
     ]
   },
-  "style": "v2",
+
   "componentFramework": "glass-easel",
   "sitemapLocation": "sitemap.json",
   "lazyCodeLoading": "requiredComponents"

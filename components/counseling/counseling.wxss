@@ -2,10 +2,10 @@
 
 /* 主题&图标 */
 .icon-container {
-  border: 3px solid #ccc; /* 设置边框 */
+  border: 6rpx solid #ccc; /* 设置边框 */
   border-radius: 30rpx; /* 设置边框的弧度 */
-  padding: 10px 5px 0 5px; /* 设置内边距 */
-  margin: 10px 0; /* 设置外边距，控制边框的位置 */
+  padding: 20rpx 10rpx 0 10rpx; /* 设置内边距 */
+  margin: 20rpx 0; /* 设置外边距，控制边框的位置 */
   padding-bottom: 20rpx;
 }
 .icon-grid {
@@ -15,12 +15,12 @@
   align-items: center; /* 图标和文字在垂直方向上居中对齐 */
 }
 .icon {
-  width: 50px;
-  height: 50px;
-  margin: 10px; /* 调整图标之间的间距 */
+  width: 96rpx;
+  height: 96rpx;
+  margin: 20rpx; /* 调整图标之间的间距 */
 }
 .icon-text {
-  font-size: 12px; /* 设置文字大小 */
+  font-size: 24rpx; /* 设置文字大小 */
   margin-top: 8rpx; /* 设置文字与图标之间的间距 */
 }
 .icon-wrapper {
@@ -33,10 +33,10 @@
 .container1 {
   display: flex;
   flex-direction: column;
-  border: 3px solid #ccc; /* 设置边框 */
+  border: 6rpx solid #ccc; /* 设置边框 */
   border-radius: 30rpx; /* 设置边框的弧度 */
   padding: 0 0 0 0; /* 设置内边距 */
-  margin: 10px 0; /* 设置外边距，控制边框的位置 */
+  margin: 20rpx 0; /* 设置外边距，控制边框的位置 */
 }
 .title {
   margin: 20rpx; /* 设置标题的外边距 */
