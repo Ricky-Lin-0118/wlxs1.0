@@ -5,7 +5,7 @@
 <!-- 滚动栏 -->
 <swiper class="swiper" indicator-dots=" " autoplay circular>
   <swiper-item>
-    <image src="../../image/2.png" class="img1"></image>
+    <image src="http://pic.funworld.cc/pic/2.png" class="img1"></image>
   </swiper-item>
   <swiper-item>item2</swiper-item>
   <swiper-item>item3</swiper-item>

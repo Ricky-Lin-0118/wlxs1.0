@@ -75,8 +75,8 @@
 }
 
 .content-image {
-  height: 175rpx;
-  width: 220rpx; /* 设置图片高度为框上下间距的一半 */
+  height: 180rpx;
+  width: 240rpx; /* 设置图片高度为框上下间距的一半 */
   border-radius: 20rpx;
   
 }

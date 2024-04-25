@@ -13,7 +13,7 @@
         </view>
       </view>
       <view class="delete-icon" bindtap="deletePost">
-        <image class="delete-icon" src="../../icon/Group 16.svg" bindtap="deletePost"></image>
+        <image class="delete-icon" src="http://pic.funworld.cc/pic/Group 16.svg" bindtap="deletePost"></image>
       </view>
     </view>
     <!-- 第二部分 -->
@@ -39,7 +39,7 @@
       </view>
       <view class="footer-bottom">
         <view class="actions">
-          <image class="like-icon" src="../../icon/点赞.png" bindtap="toggleLike"></image>
+          <image class="like-icon" src="{{isLiked ? '../../icon/点赞ed.png' : '../../icon/点赞.png'}}" bindtap="toggleLike"></image>
           <text class="like-count">{{item.likeCount}}</text>
           <image class="comment-icon" src="../../icon/评论.png" bindtap="comment"></image>
           <text class="comment-count">{{item.commentCount}}</text>

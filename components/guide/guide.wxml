@@ -1,59 +1,36 @@
-<view class="container" style="flex-direction: column;">
-  <image src="http://pic.funworld.cc/pic/1.png" class="banner-img"></image>
-  <view class="footer">
-    <view class="left">
-      <text class="tag">#情感倾诉</text>
-      <text class="viewers">223人围观</text>
+<view wx:for="{{dataList}}" wx:key="index">
+  <view class="container" style="flex-direction: column;">
+    <image src="{{item.img}}" class="banner-img"></image>
+    <view class="footer">
+      <view class="left">
+        <text class="tag">{{item.tag}}</text>
+        <text class="viewers">{{item.viewers}}人围观</text>
+      </view>
+      <view class="right">
+        <text class="message">私信TA</text>
+      </view>
     </view>
-    <view class="right">
-      <text class="message">私信TA</text>
+    <view wx:for="{{item.commit}}">
+      <navigator url="../market/market" class="area">
+        <view class="avatar-area">
+          <image src="{{item.avatar}}" class="avatar" />
+        </view>
+        <view class="info-area">
+          <view class="info-area">
+            <text class="name">{{item.user}}</text>
+          </view>
+          <view class="intro">
+            <text class="intro">{{item.content}}</text>
+          </view>
+        </view>
+      </navigator>
+      <!-- 第二块区域 -->
     </view>
+    <!--第四块区域-->
+    <navigator url="../market/market" class="area-comment">
+      <text class="comment">查看全部{{item.num}}条评论</text>
+    </navigator>
   </view>
-  <navigator url="../market/market" class="area">
-    <view class="avatar-area">
-      <image src="http://pic.funworld.cc/pic/狗.png" class="avatar" />
-    </view>
-    <view class="info-area">
-      <view class="info-area">
-        <text class="name">只要he</text>
-      </view>
-      <view class="intro">
-        <text class="intro">倾听是交流的基础，只有认真倾听他人的发言，我们才能理解他人的想法和需求</text>
-      </view>
-    </view>
-  </navigator>
-  <!-- 第二块区域 -->
-  <navigator url="../market/market" class="area">
-    <view class="avatar-area">
-      <image src="http://pic.funworld.cc/pic/狗.png" class="avatar" />
-    </view>
-    <view class="info-area">
-      <view class="info-area">
-        <text class="name">只要he</text>
-      </view>
-      <view class="intro">
-        <text class="intro">倾听是交流的基础，只有认真倾听他人的发言，我们才能理解他人的想法和需求</text>
-      </view>
-    </view>
-  </navigator>
-  <!-- 第三块区域 -->
-  <navigator url="../market/market" class="area">
-    <view class="avatar-area">
-      <image src="http://pic.funworld.cc/pic/狗.png" class="avatar" />
-    </view>
-    <view class="info-area">
-      <view>
-        <text class="name">只要he</text>
-      </view>
-      <view>
-        <text class="intro">倾听是交流的基础，只有认真倾听他人的发言，我们才能理解他人的想法和需求</text>
-      </view>
-    </view>
-  </navigator>
-  <!--第四块区域-->
-  <navigator url="../market/market" class="area-comment">
-    <text class="comment">查看全部2268条评论</text>
-  </navigator>
-</view>
 
-<view class="blank"></view>
+  <view class="blank"></view>
+</view>
