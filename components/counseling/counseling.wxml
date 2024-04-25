@@ -7,7 +7,7 @@
   </view>
   <!-- 第一块区域 -->
   <view wx:for="{{ counselor1 }}" wx:key="id" wx:for-item="first">
-  <navigator url="../market/market" class="area" >
+  <navigator url="../counselor-dialog/counselor-dialog" class="area" >
     <view class="avatar-area">
       <image src="{{first.src}}" class="avatar" />
     </view>
@@ -39,7 +39,7 @@
     <text class="title1" >分析建议</text>
   </view>
   <view wx:for="{{ counselor1 }}" wx:key="id" wx:for-item="first">
-  <navigator url="../market/market" class="area" >
+  <navigator url="../counselor-dialog/counselor-dialog" class="area" >
     <view class="avatar-area">
       <image src="{{first.src}}" class="avatar" />
     </view>
@@ -72,7 +72,7 @@
   </view>
   <!-- 第一块区域 -->
   <view wx:for="{{ counselor2 }}" wx:key="id" wx:for-item="first">
-  <navigator url="../market/market" class="area">
+  <navigator url="../counselor-dialog/counselor-dialog" class="area">
     <view class="avatar-area">
       <view class="top-label" style="background-color: rgb(250, 139, 139); border-radius: 10rpx;">工作室</view>
       <image src="{{first.src}}" class="avatar" />

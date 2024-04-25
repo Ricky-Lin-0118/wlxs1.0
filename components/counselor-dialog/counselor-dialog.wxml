@@ -1,0 +1,88 @@
+<!--components/counselor-dialog/counselor-dialog.wxml-->
+
+<!-- 顶部 -->
+  <view class="container">
+  <!-- 左边头像 -->
+  <view class="avatar-container">
+    <image class="avatar" src="{{avatarUrl}}"></image>
+    <!-- 关注按钮 -->
+    <button class="follow-btn" bindtap="handleFollow">关注</button>
+  </view>
+  <!-- 右边部分分为三列 -->
+  <view class="right-section">
+    <view class="info-section">
+      <text class="info-text">{{name}}</text>
+      <!-- 这里放置你想要的信息栏内容，可以通过绑定数据来动态展示 -->
+    </view>
+    <view class="three-section">
+    <!-- 第一列 -->
+    <view class="item">
+      <text class="number">{{number1}}</text>
+      <text class="text">{{text1}}</text>
+    </view>
+    
+    <!-- 第二列 -->
+    <view class="item">
+      <text class="number">{{number2}}</text>
+      <text class="text">{{text2}}</text>
+    </view>
+    
+    <!-- 第三列 -->
+    <view class="item">
+      <text class="number">{{number3}}%</text>
+      <text class="text">{{text3}}</text>
+    </view>
+    </view>
+  </view>
+  </view>
+<view style="margin-top: 200rpx; margin-bottom: 200rpx;">
+  <!-- 介绍 -->
+  <view class="text-container" >
+  <block wx:for="{{textArray}}" wx:key="index">
+    <text>{{item}}[皇冠倾听者] 
+[婚姻修复]
+[两性情感]
+[情绪疏导]
+[个人成长]
+[擅长话题]
+恋爱情感 (恋爱心理疏导、情感纠葛、情感修复、感情不和、异地恋、恋爱技巧、复合分析、失恋陪护、婚外情、斗小三等)
+两性关系 (夫妻关系、 无性别恋、双性恋、出轨)
+亲子教育 (青春期、 叛逆期、学业问题等)
+抑郁焦虑情绪
+个人问题 (个人成长、职场规划、人际交往、等)
+家庭纠纷 (婆媳关系、亲子关系、双亲关系、三角关系等)
+特点:客观理智，温柔体贴，陪您走出情感困惑期。
+[咨询流程]
+1.简述问题
+2.预约咨询
+</text>
+  </block>
+  </view>
+
+  <!-- 聊天消息显示区域 -->
+  <scroll-view class="message-container" scroll-y="true" scroll-into-view="{{scrollIntoView}}">
+    <view class="message" wx:for="{{conversations}}" wx:key="index">
+      <view class="message-content-self" wx:if="{{item.role === 'user'}}">
+        <text class="self-item">{{item.content}}</text>
+      </view>
+      <view class="message-content" wx:else>
+        <text class="other-item">白榆：{{item.content}}</text>
+      </view>
+      <view class="blank"></view>
+    </view>
+  </scroll-view>
+  <view style="height: 30rpx;"></view>
+</view>
+  <!-- 输入框 -->
+  <view class="container-input">
+    <!-- 输入框包含按钮和图片 -->
+    <view class="input-container">
+      <image class="input-image" src="http://pic.funworld.cc/pic/Group 12.svg"></image>      
+      <input class="input-box" placeholder="向我提问吧~" bindinput="handleInput" value="{{inputMessage}}"/>
+      <button class="input-button" bindtap="handleSend">
+        发送
+      </button>
+    </view>
+  </view>
+
+

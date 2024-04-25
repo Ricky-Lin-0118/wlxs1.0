@@ -7,10 +7,11 @@
     "pages/mine/mine",
     "pages/market/market",
     "pages/dialog/dialog",
-   
     "pages/temp/temp",
     "pages/temp/temp1/temp1",
-    "pages/temp/temp2/temp2"
+    "pages/temp/temp2/temp2",
+    "pages/counselor-dialog/counselor-dialog",
+    "pages/activity/activity"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -50,7 +51,6 @@
       }
     ]
   },
-
   "componentFramework": "glass-easel",
   "sitemapLocation": "sitemap.json",
   "lazyCodeLoading": "requiredComponents"

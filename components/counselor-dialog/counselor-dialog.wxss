@@ -1,0 +1,214 @@
+/* pages/example/example.wxss */
+page {
+  background-color: #f7f7f7; /* 设置背景颜色 */
+}
+
+.container {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  width: 100%; /* 设置整个容器宽度为屏幕宽度 */
+  top: 0rpx;  /*fixed绝对定位必须要写*/
+  background-color: white;
+}
+
+.avatar-container {
+  position: relative; /* 相对定位，用于定位关注按钮 */
+  margin-right: 20rpx; /* 设置头像区域右侧留出一定距离 */
+}
+
+.avatar {
+  width: 120rpx; /* 头像区域宽度增大 */
+  height: 120rpx; /* 头像区域高度增大 */
+  border-radius: 50%;
+  margin-left: 16rpx;
+}
+
+.follow {
+  position: relative; /* 绝对定位，相对于父元素 .avatar-container 定位 */
+  background-color: rgb(184, 218, 230);
+  border: none; /* 去除按钮边框 */
+  border-radius: 20rpx; /* 设置按钮圆角 */
+  bottom: 0; /* 底部距离 */
+  left: 0; /* 左侧距离 */
+  padding: 5rpx 10rpx ; /* 内边距 */
+  font-size: 16rpx; /* 字体大小 */
+ color: rgb(82, 132, 179);
+  margin-left: 40rpx;
+}
+
+.follow-btn{
+  position: absolute; /* 绝对定位，相对于父元素 .avatar-container 定位 */
+  bottom: 5rpx; /* 调整按钮距离头像底部的距离 */
+  right: 5rpx; /* 调整按钮距离头像右侧的距离 */
+  background-color: #61a9da; /* 设置按钮背景色 */
+  color: #fff; /* 设置按钮文字颜色 */
+  font-size: 18rpx; /* 调整按钮文字大小 */
+  padding: 0rpx 16rpx; /* 调整按钮内边距 */
+  border: none; /* 去除按钮边框 */
+  border-radius: 20rpx; /* 调整按钮圆角 */
+}
+
+.info-section {
+  flex: 1; /* 让信息栏占满剩余空间 */
+  display: flex;
+  justify-content: space-between; /* 横向分布 */
+  align-items: center;
+  margin-left: 20rpx; /* 信息栏与头像区域保持一定距离 */
+}
+
+.info-text {
+  font-size: 36rpx;
+}
+
+.right-section {
+  flex: 1; /* 让右侧部分占满剩余空间 */
+  display: flex;
+  flex-direction: column; /* 将右侧部分横向排列 */
+  justify-content: space-between; /* 横向分布 */
+  align-items: center;
+  margin-left: 30rpx; /* 右侧部分与头像区域保持一定距离 */
+  margin-right: 30rpx;
+  margin-top: 16rpx;
+  margin-bottom: 10rpx;
+}
+
+.three-section {
+  flex: 1;
+  display: flex;
+  justify-content: space-between; /* 横向分布 */
+  width: 480rpx;
+  align-items: center;
+  margin: 10rpx;
+  padding: 5rpx;
+}
+
+.item {
+  padding: 10rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.number {
+  font-size: 24rpx;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+  color: rgb(116, 116, 116);
+}
+
+.text {
+  font-size: 24rpx;
+  color: gray;
+}
+/* 介绍 */
+.text-container {
+  width: calc(100% - 40rpx); /* 宽度为整个页面宽度减去左右距离之和 */
+  width: 80%; /* 设置区域宽度为页面宽度的80% */
+  margin: 20rpx auto; /* 设置上下间距为20rpx，左右自动居中 */
+  border: 1rpx ; /* 设置边框为1像素的黑色实线 */
+  border-radius: 20rpx;
+  padding: 20rpx; /* 设置内边距为20rpx，增加内容与边框的距离 */
+  background-color: white;
+  line-height: 1.5;
+}
+
+
+/* 聊天框以及输入框 */
+
+.message-container {
+  display: flex;
+  margin-bottom: 100rpx;
+}
+
+.message {
+  margin-top: 20rpx;
+  justify-self: flex-end;
+  display: flex;
+  width: 98%;
+}
+
+.message-content {
+  border-radius: 5rpx;
+  margin-bottom: 10rpx;
+  width: fit-content;
+  background-color: white;
+  border-radius: 30rpx;
+  padding: 10rpx 20rpx;
+  margin-left: 12rpx;
+}
+
+.message-content-self {
+  padding: 10rpx 20rpx;
+  border-radius: 5rpx;
+  margin-bottom: 10rpx;
+  text-align: right;
+  background-color: #E7F6FF;
+  width: fit-content;
+  border-radius: 30rpx;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.input-container {
+  position: fixed;
+  bottom: 0;
+  padding: 10rpx;
+  display: flex; /* 使用 flex 布局 */
+  align-items: center; /* 垂直居中对齐 */
+  justify-content: space-between;
+
+  border-radius: 200rpx;
+  margin-bottom: 20rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 650rpx;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 5px 5px -5px rgba(0, 0, 0, 0.1), 5px 0 5px -5px rgba(0, 0, 0, 0.1), -5px 0 5px -5px rgba(0, 0, 0, 0.1);
+}
+
+.input-image {
+  padding-left: 20rpx;
+  width: 60rpx;
+  height: 60rpx;
+  padding-right: 20rpx;
+}
+
+.input-button {
+  font-size: 30rpx;
+  background-color: rgba(63, 90, 241, 0.575);
+  color: white;
+  border-radius: 50rpx;
+  margin-right: 15rpx;
+}
+
+.container-input {
+  bottom: 0rpx;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  width: 90%; /* 设置整个容器宽度为屏幕宽度 */
+}
+
+.self-item{
+  /* background-color: #E7F6FF; */
+  padding: 20rpx 20rpx;
+  font-size: 30rpx;
+  font-weight: 320;
+  border-radius: 16rpx;
+}
+
+.other-item{
+  padding: 20rpx 20rpx;
+  margin: 20rpx;
+  font-size: 30rpx;
+  font-weight: 300;
+  border-radius: 16rpx;
+  line-height: 1.8;
+  border: 1rpx ;
+}
+
+
+.blank {
+  height: 20rpx;
+}

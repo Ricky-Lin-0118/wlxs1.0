@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "counselor-dialog":"../../components/counselor-dialog/counselor-dialog"
+  }
+
+}

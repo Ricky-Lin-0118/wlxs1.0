@@ -5,10 +5,20 @@
 <!-- 滚动栏 -->
 <swiper class="swiper" indicator-dots=" " autoplay circular>
   <swiper-item>
-    <image src="http://pic.funworld.cc/pic/2.png" class="img1"></image>
+  <navigator url="../activity/activity">
+    <image src="http://pic.funworld.cc/pic/2.png" class="img1" ></image>
+  </navigator>
   </swiper-item>
-  <swiper-item>item2</swiper-item>
-  <swiper-item>item3</swiper-item>
+  <swiper-item>
+    <navigator url="../activity/activity">
+      item2
+    </navigator>
+  </swiper-item>
+  <swiper-item>
+    <navigator url="../activity/activity">
+      item3
+    </navigator>
+  </swiper-item>
 </swiper>
 
 <!-- 主题图标&链接 -->
@@ -78,4 +88,5 @@
 </view>
 
 <counseling counselor1="{{ counselor1 }}"></counseling>
+
 

@@ -1,0 +1,6 @@
+<!--components/activity/activity.wxml-->
+<text>components/activity/activity.wxml</text>
+
+<view style="width: 100%;" >
+<image src="https://boot-img.xuexi.cn/contribute_img/20210610172959/29692426124476332.jpg" style="width: 100%;"></image>
+</view>

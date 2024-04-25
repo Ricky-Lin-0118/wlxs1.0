@@ -58,6 +58,7 @@
 }
 .avatar-area {
   margin-right: 20rpx;
+  position: relative;
 }
 .avatar {
   width: 100rpx;
@@ -146,4 +147,6 @@
   padding: 5rpx 10rpx ; /* 内边距 */
   font-size: 16rpx; /* 字体大小 */
   color: #fff; /* 字体颜色 */
+  
+  
 }
