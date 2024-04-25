@@ -16,61 +16,61 @@
   <view class="icon-grid">
   <navigator url="../market/market">
     <view class="icon-wrapper">
-      <image src="../../icon/Group 23.svg" class="icon"  />
+      <image src="http://pic.funworld.cc/pic/Group 23.svg" class="icon"  />
       <text class="icon-text">情感</text>
     </view>
   </navigator>
   <navigator url="../market/market">
     <view class="icon-wrapper">
-      <image src="../../icon/Group 24.svg" class="icon" />
+      <image src="http://pic.funworld.cc/pic/Group 24.svg" class="icon" />
       <text class="icon-text">家庭</text>
     </view>
   </navigator>
   <navigator url="../market/market">
     <view class="icon-wrapper">
-      <image src="../../icon/Group 27.svg" class="icon"  />
+      <image src="http://pic.funworld.cc/pic/Group 27.svg" class="icon"  />
       <text class="icon-text">学习</text>
     </view>
   </navigator>
   <navigator url="../market/market">
     <view class="icon-wrapper">
-      <image src="../../icon/Group 28.svg" class="icon" />
+      <image src="http://pic.funworld.cc/pic/Group 28.svg" class="icon" />
       <text class="icon-text">人际</text>
     </view>
   </navigator>
   <navigator url="../market/market">
     <view class="icon-wrapper">
-      <image src="../../icon/Group 30.svg" class="icon" />
+      <image src="http://pic.funworld.cc/pic/Group 30.svg" class="icon" />
       <text class="icon-text">职场</text>
     </view>
   </navigator>
   <navigator url="../market/market">
     <view class="icon-wrapper">
-      <image src="../../icon/Group 31.svg" class="icon"  />
+      <image src="http://pic.funworld.cc/pic/Group 31.svg" class="icon"  />
       <text class="icon-text">成长</text>
     </view>
   </navigator>
   <navigator url="../market/market">
     <view class="icon-wrapper">
-      <image src="../../icon/Group 34.svg" class="icon" />
+      <image src="http://pic.funworld.cc/pic/Group 34.svg" class="icon" />
       <text class="icon-text">失眠</text>
     </view>
   </navigator>
   <navigator url="../market/market">
     <view class="icon-wrapper">
-      <image src="../../icon/Group 36.svg" class="icon"  />
+      <image src="http://pic.funworld.cc/pic/Group 36.svg" class="icon"  />
       <text class="icon-text">规划</text>
     </view>
   </navigator>
   <navigator url="../market/market">
     <view class="icon-wrapper">
-      <image src="../../icon/Group 39.svg" class="icon" />
+      <image src="http://pic.funworld.cc/pic/Group 39.svg" class="icon" />
       <text class="icon-text">倾诉</text>
     </view>
   </navigator>
   <navigator url="../market/market">
     <view class="icon-wrapper">
-      <image src="../../icon/Group 37.svg" class="icon" />
+      <image src="http://pic.funworld.cc/pic/Group 37.svg" class="icon" />
       <text class="icon-text">其它</text>
     </view>
   </navigator>

@@ -75,7 +75,7 @@ Component({
     counselor1: [
       {
         id: 1,
-        src: 'http://pic.funworld.cc/pic/%E7%99%BD%E6%A6%86.png',
+        src: 'http://pic.funworld.cc/pic/白榆.png',
         name: '白榆',
         serviceTime: 5,
         introContent: '心理学硕士学位，并在多个知名的心理咨询机构积累了丰富的工作经验。通过系统的学习的实践...',
@@ -87,8 +87,8 @@ Component({
       },
       {
         id: 2,
-        src: 'http://pic.funworld.cc/pic/%E7%99%BD%E6%A6%86.png',
-        name: '牢宇',
+        src: 'http://pic.funworld.cc/pic/白榆.png',
+        name: '白榆',
         serviceTime: 91,
         introContent: '心理学硕士学位，并在多个知名的心理咨询机构积累了丰富的工作经验。通过系统的学习的实践...',
         tags: [
@@ -100,13 +100,13 @@ Component({
       {
         id: 3,
         src: 'http://pic.funworld.cc/pic/%E7%99%BD%E6%A6%86.png',
-        name: '牢帆',
+        name: '白榆',
         serviceTime: 7,
-        introContent: '简介',
+        introContent: '心理学硕士学位，并在多个知名的心理咨询机构积累了丰富的工作经验。通过系统的学习的实践...',
         tags: [
-          { id: 7, tag: '标签4' },
-          { id: 8, tag: '标签5' },
-          { id: 9, tag: '标签6' }
+          { id: 7, tag: '失恋' },
+          { id: 8, tag: '情感' },
+          { id: 9, tag: '婚姻' }
         ]
       }
     ],
@@ -136,8 +136,8 @@ Component({
         src: 'http://pic.funworld.cc/pic/%E7%99%BD%E6%A6%86.png',
         gender: '女',
         age: 28,
-        name: '姓名2',
-        profession: '职业2',
+        name: '白榆',
+        profession: '心理疏导师',
         favorableRate: 90,
         serviceTime: 120,
         comment: 15,
@@ -145,8 +145,8 @@ Component({
         constellation: '天蝎座',
         studio: '工作室2',
         labels: [
-          { id: 3, label: '标签3' },
-          { id: 4, label: '标签4' },
+          { id: 3, label: '情感修复' },
+          { id: 4, label: '情感修复' },
           // 可以根据需要添加更多的标签数据
         ]
       },
@@ -155,8 +155,8 @@ Component({
         src: 'http://pic.funworld.cc/pic/%E7%99%BD%E6%A6%86.png',
         gender: '女',
         age: 28,
-        name: '姓名3',
-        profession: '职业3',
+        name: '白榆',
+        profession: '心理咨询师',
         favorableRate: 90,
         serviceTime: 120,
         comment: 15,
@@ -164,8 +164,8 @@ Component({
         constellation: '天蝎座',
         studio: '工作室2',
         labels: [
-          { id: 5, label: '标签5' },
-          { id: 6, label: '标签6' },
+          { id: 5, label: '情感修复' },
+          { id: 6, label: '情感修复' },
           // 可以根据需要添加更多的标签数据
         ]
       }
