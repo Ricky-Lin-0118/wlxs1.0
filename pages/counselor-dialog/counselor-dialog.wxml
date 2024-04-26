@@ -1,6 +1,0 @@
-<!--pages/counselor-dialog/counselor-dialog.wxml-->
-  <!-- 页面内容 -->
-
-<view>
-  <counselor-dialog ></counselor-dialog>
-</view>

@@ -1,0 +1,147 @@
+<view class="container-recommend">
+  <image src="http://pic.funworld.cc/pic/知识1.png" mode="" />
+  <view class="title">
+    <text class="title-content">学习交流——共筑知识之桥</text>
+  </view>
+  <view class="content">
+    <text class="content-content">学习，是每个人成长道路上不可或缺的一部分。在这个信息爆炸的时代，如何高效学习、如何与他人进行有效的学习交流，已成为我们共同关注的焦点。今天，我愿与大家分享一些关于学习交流的心得和体会，希望能对大家有所帮助。\n学习交流，首先是一种知识的共享。每个人都有自己的学习方法和经验，通过交流，我们可以互相借鉴、取长补短。比如，有些同学擅长数学逻辑，有些同学擅长语言表达，通过交流，我们可以学习到不同的思维方式和学习技巧，从而丰富自己的知识体系。\n同时，学习交流也是一种情感的沟通。在学习的道路上，我们难免会遇到困难和挫折。这时，与他人的交流可以帮助我们排解困惑、减轻压力。我们可以分享自己的学习心得、遇到的难题，寻求他人的帮助和建议，从而更好地应对学习中的挑战。</text>
+  </view>
+  <view class="footer">
+    <view class="tag">
+      <text class="tag-content">#学习交流</text>
+    </view>
+    <view class="time">
+      3月30日 14:20 武汉
+    </view>
+  </view>
+</view>
+
+<view class="new-commit">
+  <view class="container-newest">
+    <text class="newest">最新评论</text>
+  </view>
+  <view class="commit">
+    <view class="avatar-area">
+      <image src="http://pic.funworld.cc/pic/狗.png" mode="" class="avatar" />
+    </view>
+    <view>
+      <view class="main-commit">
+        <view class="info-area">
+          <view class="info-area">
+            <text class="name">只要he</text>
+          </view>
+          <view class="intro">
+            <text class="intro">倾听是交流的基础，只有认真倾听他人的发言，我们才能理解他人的想法和需求</text>
+          </view>
+          <view class="main-time">
+            <text class="time-small">21:56 湖北</text>
+          </view>
+        </view>
+        <view>
+          <image class="like-icon" src="../../icon/点赞.png" bindtap="toggleLike"></image>
+          <text class="counter">256</text>
+        </view>
+      </view>
+      <view class="sub-commit">
+        <view class="sub-avatar-area">
+          <image src="http://pic.funworld.cc/pic/白榆.png" mode="" class="sub-avatar" />
+        </view>
+        <view class="sub-commit">
+          <view class="sub-info-area">
+            <view class="sub-info-area">
+              <text class="name">没心情</text>
+            </view>
+            <view class="sub-intro">
+              <text class="intro">我们需要付诸实践，积极参与到学习交流中去，才能真正感受到它的价值和意义</text>
+            </view>
+            <view class="sub-time">
+              <text class="time-small">21:56 湖北</text>
+            </view>
+            <view class="more-release">
+              <text class="time-small">更多7条回复</text>
+            </view>
+          </view>
+          <view>
+            <image class="like-icon" src="../../icon/点赞.png" bindtap="toggleLike"></image>
+            <text class="counter">256</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="commit">
+    <view class="avatar-area">
+      <image src="http://pic.funworld.cc/pic/狗.png" mode="" class="avatar" />
+    </view>
+    <view>
+      <view class="main-commit">
+        <view class="info-area">
+          <view class="info-area">
+            <text class="name">只要he</text>
+          </view>
+          <view class="intro">
+            <text class="intro">倾听是交流的基础，只有认真倾听他人的发言，我们才能理解他人的想法和需求</text>
+          </view>
+          <view class="main-time">
+            <text class="time-small">21:56 湖北</text>
+          </view>
+        </view>
+        <view>
+          <image class="like-icon" src="../../icon/点赞.png" bindtap="toggleLike"></image>
+          <text class="counter">256</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="more-commie">
+    <text class="more-commie-all">查看全部2268条评论</text>
+  </view>
+</view>
+
+<view class="release">
+  <view class="release-title">相关发布</view>
+  <!-- <view class="post-header">
+    <view class="header-left">
+      <view class="release-avatar">
+        <image class="release-avatar-image" src="http://pic.funworld.cc/pic/白榆.png"></image>
+      </view>
+      <view class="release-info">
+        <text class="release-name">白榆</text>
+        <text class="release-time">32分钟前</text>
+      </view>
+    </view>
+    <view class="delete-icon" bindtap="deletePost">
+      <image class="delete-icon" src="http://pic.funworld.cc/pic/Group 16.svg" bindtap="deletePost"></image>
+    </view>
+  </view>
+  <navigator url="../market-recommend/market-recommend">
+    <view class="post-content">
+      <text class="release-title">学习交流——共筑知识之桥</text>
+      <view class="image-container">
+        <view class="image-List">
+          <image class="content-image" src="http://pic.funworld.cc/pic/知识1.png" mode="" />
+          <image class="content-image" src="http://pic.funworld.cc/pic/知识2.png" mode="" />
+          <image class="content-image" src="http://pic.funworld.cc/pic/知识3.png" mode="" />
+        </view>
+      </view>
+      <view class="release-content">
+        <text class="release-content">学习，是每个人成长道路上不可或缺的一部分。在这个信息爆炸的时代，如何高效学习...</text>
+      </view>
+    </view>
+  </navigator>
+  <view class="post-footer">
+    <view class="footer-top">
+      <text class="release-tag">#学习交流</text>
+      <text class="viewers">233人围观</text>
+    </view>
+    <view class="footer-bottom">
+      <view class="actions">
+        <image class="like-icon" src="../../icon/点赞.png" bindtap="toggleLike"></image>
+        <text class="like-count">45</text>
+        <image class="comment-icon" src="../../icon/评论.png" bindtap="comment"></image>
+        <text class="comment-count">12</text>
+      </view>
+    </view>
+  </view> -->
+  <recommend></recommend>
+</view>

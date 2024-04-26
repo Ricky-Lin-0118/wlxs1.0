@@ -1,41 +1,73 @@
-/* pages/mine/mine.wxss */
-.container1 view{
+.container-mine{
+  background-image: url('https://pic.funworld.cc/pic/personal-bg.jpg');
+}
+.footer-svg {
+  display: flex;
+  justify-content: space-between;
+}
+.image {
+  width: 50rpx;
+  height: 50rpx;
+  padding: 25rpx 20rpx;
+}
+.avatar {
+  padding: 20rpx;
+}
+.avatar-size{
   width: 200rpx;
   height: 200rpx;
-  text-align: center;
-  line-height: 200rpx;
+  border-radius: 50%;
 }
-.container1 view:nth-child(1){
-  background-color: lightblue;
+.name-message{
+  padding-top: 95rpx;
 }
-.container1 view:nth-child(2){
-  background-color: lightgreen;
+.name{
+  padding-bottom: 20rpx;
 }
-.container1 view:nth-child(3){
-  background-color: lightpink;
+.name-size{
+  font-size: 50rpx;
+  font-weight: 600;
 }
-.container1 {
+.person{
   display: flex;
-  width: 100px;
-  height: 100px;
+  padding-top: 200rpx;
+}
+.content{
+  padding-left: 30rpx;
+}
+.content-size{
+  color: #93998C
+}
+.message{
+  display: flex;
+  padding: 40rpx 20rpx;
+}
+.per-size{
+  padding: 10rpx;
+}
+.num{
+  font-size: 45rpx;
 }
 
-.container2 view{
-  width: 200rpx;
-  height: 200rpx;
-  text-align: center;
-  line-height: 200rpx;
-}
-.container2 view:nth-child(1){
-  background-color: lightblue;
-}
-.container2 view:nth-child(2){
-  background-color: lightgreen;
-}
-.container2 view:nth-child(3){
-  background-color: lightpink;
-}
-.container2{
+.footer-main{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  border: 1rpx;
+  border-radius: 20rpx 20rpx 0 0;
+}
+.footer {
+  display: flex;
+}
+.button{
+  padding: 30rpx 25rpx;
+}
+
+.button-text{
+  font-size: 36rpx;
+  font-weight: 600;
+  color: #9F9F9F;
+}
+.active{
+  color: black;
+  border-bottom: 10rpx solid rgba(96, 150, 231, 0.363); /* 分割线 */
 }

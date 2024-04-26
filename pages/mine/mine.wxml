@@ -1,16 +1,70 @@
 <!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
-<scroll-view class="container1" scroll-y="true">
-  <view>A</view>
-  <view>B</view>
-  <view>C</view>
-</scroll-view>
-
-<view class="container2" >
-  <view>D</view>
-  <view>E</view>
-  <view>F</view>
+<view class="container-mine">
+  <view class="footer-svg">
+    <image src="https://pic.funworld.cc/pic/Group 9.svg" mode="" class="image"/>
+    <navigator url="../login/login">
+      <image src="https://pic.funworld.cc/pic/Group 49.svg" mode="" class="image"/>
+    </navigator>
+  </view>
+  <view class="person">
+    <view class="avatar">
+      <image src="https://i2.hdslb.com/bfs/face/4b481c5492f67faa3fb07f7b6e013e39723198cc.jpg@240w_240h_1c_1s_!web-avatar-space-header.avif" mode="" class="avatar-size"/>
+    </view>
+    <view class="name-message">
+      <view class="name">
+        <text class="name-size">芝士小狗</text>
+      </view>
+      <view>
+        <text>20岁 | 摩羯座 | 湖北 武汉</text>
+      </view>
+    </view>
+  </view>
+  <view class="content">
+    <text class="content-size">在工作与生活中找到最佳契合点的乐观者</text>
+  </view>
+  <view class="message">
+    <view class="per-size">
+      <view><text class="num">8</text></view>
+      <view><text>被关注</text></view>
+    </view>
+    <view class="per-size">
+      <view><text class="num">6</text></view>
+      <view><text>关注</text></view>
+    </view>
+    <view class="per-size">
+      <view><text class="num">25</text></view>
+      <view><text>获赞</text></view>
+    </view>
+    <view class="per-size">
+      <view><text class="num">253</text></view>
+      <view><text>访客</text></view>
+    </view>
+  </view>
 </view>
 
-<view>  </view>
-<navigator url="../login/login" open-type="navigate">点击跳转到登录注册</navigator>
+<view class="footer-main">
+  <view class="footer">
+    <view class="button" bindtap="switchToPage1">
+      <text class="button-text {{currentTab === 0 ? 'active' : ''}}">发帖</text>
+    </view>
+    <view class="button" bindtap="switchToPage2">
+      <text class="button-text {{currentTab === 1 ? 'active' : ''}}">点赞</text>
+    </view>
+    <view class="button" bindtap="switchToPage3">
+      <text class="button-text {{currentTab === 2 ? 'active' : ''}}">疏导</text>
+    </view>
+  </view>
+  <image src="http://pic.funworld.cc/pic/Group 7.svg" alt="" class="image"/>
+</view>
+
+<scroll-view class="page-scroll" scroll-x="true" scroll-with-animation="{{true}}">
+  <view wx:if="{{currentTab === 0}}">
+    <post ></post>
+  </view>
+  <view wx:if="{{currentTab === 1}}">
+    <click ></click>
+  </view>
+  <view wx:if="{{currentTab === 2}}">
+    <mine-guide ></mine-guide>
+  </view>
+</scroll-view>

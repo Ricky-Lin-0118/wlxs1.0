@@ -1,6 +1,94 @@
 <!--components/activity/activity.wxml-->
-<text>components/activity/activity.wxml</text>
 
 <view style="width: 100%;" >
-<image src="https://boot-img.xuexi.cn/contribute_img/20210610172959/29692426124476332.jpg" style="width: 100%;"></image>
+  <view class="transpond-icon" bindtap="transpondPost">
+    <image class="transpond-icon" src="../../icon/转发.png" bindtap="transpondPost"></image>
+  </view>
+  <image src="https://boot-img.xuexi.cn/contribute_img/20210610172959/29692426124476332.jpg" style="width: 100%;"></image>
+
 </view>
+<view class="act-container" >
+  <view style="height: 24rpx;"></view>
+  <view class="title">
+    <text style="font-size: 42rpx; ">很难控制情绪</text>
+  </view>
+  <view >
+    <scroll-view class="message-container" scroll-y="true" scroll-into-view="{{scrollIntoView}}">
+    <view class="message" wx:for="{{conversations}}" wx:key="index">
+      <view class="message-content-self" wx:if="{{item.role === 'user'}}">
+        <text class="self-item">{{item.content}}</text>
+      </view>
+      <view class="message-content" wx:else>
+        <text class="other-item">白榆：{{item.content}}</text>
+      </view>
+      <view class="blank"></view>
+    </view>
+    </scroll-view>
+  </view>
+  <view class="post-footer">
+    <view class="footer-top">
+      <text class="tag">{{ tag }}</text>
+    </view>
+    <view class="footer-bottom">
+      <view class="time-posittion">
+        <text class="time-position">{{time}}</text>
+        <text class="time-position" >{{position}}</text>
+      </view>
+    </view>
+  </view>
+
+
+</view>
+
+<view class="comment">
+  <view class="title">
+    <text style="font-size: 42rpx;">最新评论</text>
+  </view>
+
+  <view wx:for="{{ comments }}" wx:key="id" wx:for-item="first" style="display: flex;">
+    <view class="avatar-area">
+      <image src="{{first.src}}" class="avatar" />
+    </view>
+    <view class="info-area">
+      <view class="info-area1">
+        <text class="name">{{first.name}}</text>
+        
+      </view>
+
+      <view class="intro">
+        <text class="intro">{{first.introContent}}</text>
+      </view>
+      <view class="time-position">
+        <text class="time-position" style="padding: 6rpx 0rpx;">{{first.time}}</text>
+        <text class="time-position">{{first.position}}</text>
+      </view>
+      <!-- 回复部分 -->
+      <view class="info-area1" style="margin-top: 6rpx; ">
+        <block wx:for="{{ first.reply }}" wx:key="id" wx:for-item="second">
+          <view class="avatar-area" >
+            <image src="{{second.src}}" class="avatar" />
+          </view>
+          <view class="info-area">
+            <view class="info-area1">
+              <text class="name">{{second.name}}</text>
+            </view>
+            <view class="intro">
+              <text class="intro">{{second.introContent}}</text>
+            </view>
+            <view class="time-position">
+              <text class="time-position" style="padding: 6rpx 0rpx;">{{second.time}}</text>
+              <text class="time-position">{{second.position}}</text>
+            </view>
+          </view>
+        </block>
+      </view>
+      <view style="margin: 20rpx 0;margin-left: 100rpx;">
+        <text class="name">{{first.replyNum}}</text>
+      </view>
+    </view>
+  </view>
+  <view style="margin: 20rpx 0; display: flex; justify-content: center;">
+    <text class="name">查看全部2268条评论</text>
+  </view>
+</view>
+<view style="height: 50rpx;"></view>

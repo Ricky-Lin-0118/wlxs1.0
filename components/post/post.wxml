@@ -2,28 +2,14 @@
   <!-- 帖子框 -->
   <view class="post-container" wx:for="{{ dataList }}" wx:key="index">
     <!-- 第一部分 -->
-    <view class="post-header">
-      <view class="header-left">
-        <view class="avatar">
-          <image class="avatar-image" src="{{ item.avatarUrl }}"></image>
-        </view>
-        <view class="info">
-          <text class="name">{{ item.name }}</text>
-          <text class="time">{{ item.time }}</text>
-        </view>
-      </view>
-      <view class="delete-icon" bindtap="deletePost">
-        <image class="delete-icon" src="http://pic.funworld.cc/pic/Group 16.svg" bindtap="deletePost"></image>
-      </view>
-    </view>
     <!-- 第二部分 -->
     <navigator url="../market-recommend/market-recommend">
       <!-- 设置跳转链接 -->
       <view class="post-content">
         <text class="title">{{item.title}}</text>
         <view class="image-container">
-          <view class="image-List" wx:for="{{ item.imageList }}">
-            <image class="content-image" src="{{ item.url }}" mode=""/>
+          <view class="image-List" wx:for="{{ item.imageList }}" wx:key="index">
+            <image class="content-image" src="{{ item.url }}" mode="" />
           </view>
         </view>
         <view class="content">
@@ -39,7 +25,7 @@
       </view>
       <view class="footer-bottom">
         <view class="actions">
-          <image class="like-icon" src="{{isLiked ? '../../icon/点赞ed.png' : '../../icon/点赞.png'}}" bindtap="toggleLike"></image>
+          <image class="like-icon" src="../../icon/点赞.png" bindtap="toggleLike"></image>
           <text class="like-count">{{item.likeCount}}</text>
           <image class="comment-icon" src="../../icon/评论.png" bindtap="comment"></image>
           <text class="comment-count">{{item.commentCount}}</text>

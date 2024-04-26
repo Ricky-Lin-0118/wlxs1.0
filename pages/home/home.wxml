@@ -5,17 +5,17 @@
 <!-- 滚动栏 -->
 <swiper class="swiper" indicator-dots=" " autoplay circular>
   <swiper-item>
-  <navigator url="../activity/activity">
+  <navigator url="../activities/activities">
     <image src="http://pic.funworld.cc/pic/2.png" class="img1" ></image>
   </navigator>
   </swiper-item>
   <swiper-item>
-    <navigator url="../activity/activity">
+    <navigator url="../activities/activities">
       item2
     </navigator>
   </swiper-item>
   <swiper-item>
-    <navigator url="../activity/activity">
+    <navigator url="../activities/activities">
       item3
     </navigator>
   </swiper-item>

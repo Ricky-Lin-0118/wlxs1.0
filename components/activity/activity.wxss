@@ -1,1 +1,159 @@
 /* components/activity/activity.wxss */
+
+.transpond-icon {
+  position: absolute;
+  width: 42rpx;
+  height: 42rpx;
+  margin-top: 16rpx;
+  left: 340rpx;
+  filter: brightness(0.5);
+  /* background-image: url('../../image/delete-icon.png'); */
+}
+
+.act-container{
+  border-radius: 20rpx; 
+  position: relative; 
+  margin-top: -85rpx; 
+  background-color: white;
+}
+
+.title{
+  left: 20rpx;
+  top: 10rpx;
+  margin-left: 14rpx;
+  margin-bottom: 24rpx;
+}
+
+/* 聊天框以及输入框 */
+
+.message-container {
+  display: flex;
+  margin-bottom: 24rpx;
+}
+
+.message {
+  margin-top: 20rpx;
+  justify-self: flex-end;
+  display: flex;
+  width: 98%;
+}
+
+.message-content {
+  margin-bottom: 10rpx;
+  width: fit-content;
+  background-color: rgb(235, 235, 235);
+  border-radius: 20rpx 20rpx 20rpx 0rpx;
+  padding: 10rpx 20rpx;
+  margin-left: 12rpx;
+}
+
+.message-content-self {
+  padding: 10rpx 20rpx;
+  border-radius: 5rpx;
+  margin-bottom: 10rpx;
+  text-align: right;
+  background-color: #E7F6FF;
+  width: fit-content;
+  border-radius: 20rpx 20rpx 0rpx 20rpx;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.self-item{
+  /* background-color: #E7F6FF; */
+  padding: 20rpx 20rpx;
+  font-size: 30rpx;
+  font-weight: 320;
+  border-radius: 16rpx;
+}
+
+.other-item{
+  padding: 20rpx 20rpx;
+  margin: 20rpx;
+  font-size: 30rpx;
+  font-weight: 300;
+  border-radius: 18rpx;
+  line-height: 1.85;
+  border: 1rpx lightgray;
+}
+
+.blank {
+  height: 10rpx;
+}
+/* 底部 */
+.post-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rpx 10rpx 10rpx;
+  margin-bottom: 20rpx;
+  border-bottom: 4rpx solid rgb(224, 224, 224); /* 设置下边框为2像素的实线，并且颜色为黑色 */
+  background-image: linear-gradient(to right, transparent 50%, #000 50%, transparent 50%); /* 创建一个水平线性渐变背景，使得两端变透明 */
+
+}
+
+.tag {
+  font-size: 28rpx;
+  color: rgb(128, 126, 126);
+  margin-right: 10rpx;
+  background-color: rgb(235, 235, 235);
+  border-radius: 20rpx;
+  padding: 6rpx 14rpx;
+}
+
+.footer-top {
+  display: flex;
+  margin-bottom: 14rpx;
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14rpx;
+}
+
+.time-position{
+  font-size: 24rpx;
+  color: rgb(167, 167, 167);
+  margin-right: 10rpx;
+  padding: 6rpx 14rpx;
+  
+}
+
+
+/* 评论 */
+.avatar-area {
+  margin-right: 20rpx;
+  position: relative;
+  left: 14rpx;
+}
+
+.avatar {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50rpx; /* 设置头像为圆形 */
+}
+.info-area {
+  display: flex;
+  flex-direction: column; /* 子元素垂直方向排列 */
+  justify-content: space-between; /* 垂直方向上均匀分布子元素 */
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+}
+.info-area1{
+  display: flex;
+   /* 子元素水平居中对齐 */
+}
+.name {
+  font-size: 26rpx;
+  
+  color: lightgray;
+  margin-bottom: 10rpx;
+}
+.intro {
+  font-size: 24rpx;
+  color: #666;
+  margin-bottom: 10rpx;
+  margin-top: 10rpx;
+  margin-right: 30rpx;
+}

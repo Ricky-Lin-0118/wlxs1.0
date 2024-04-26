@@ -1,6 +1,4 @@
-// pages/counselor-dialog/counselor-dialog.js
-var windowName='白榆【情感分析师】'
-var windowName = window;
+// pages/temp/temp1/temp1.js
 Page({
 
   /**
@@ -9,8 +7,6 @@ Page({
   data: {
 
   },
-  
-
 
   /**
    * 生命周期函数--监听页面加载

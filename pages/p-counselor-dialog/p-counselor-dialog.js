@@ -1,27 +1,13 @@
-// pages/mine/mine.js
+// pages/p-counselor-dialog/p-counselor-dialog.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    currentTab: 0
+
   },
-  switchToPage1: function () {
-    this.setData({
-      currentTab: 0
-    });
-  },
-  switchToPage2: function () {
-    this.setData({
-      currentTab: 1
-    });
-  },
-  switchToPage3: function () {
-    this.setData({
-      currentTab: 2
-    });
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */

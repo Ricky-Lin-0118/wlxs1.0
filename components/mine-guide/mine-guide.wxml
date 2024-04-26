@@ -1,0 +1,16 @@
+<view wx:for="{{dataList}}" wx:key="index">
+  <view class="container" style="flex-direction: column;">
+    <image src="{{item.img}}" class="banner-img"></image>
+    <view class="footer">
+      <view class="left">
+        <text class="tag">{{item.tag}}</text>
+        
+      </view>
+      <view class="right">
+        <text class="viewers">{{item.viewers}}人围观</text>
+      </view>
+    </view>   
+  </view>
+
+  <view class="blank"></view>
+</view>

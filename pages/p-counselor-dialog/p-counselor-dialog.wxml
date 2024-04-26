@@ -1,0 +1,4 @@
+<!--pages/p-counselor-dialog/p-counselor-dialog.wxml-->
+<text>pages/counselor-dialog/counselor-dialog.wxml</text>
+
+<counselor-dialog></counselor-dialog>

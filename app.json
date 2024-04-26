@@ -10,8 +10,9 @@
     "pages/temp/temp",
     "pages/temp/temp1/temp1",
     "pages/temp/temp2/temp2",
-    "pages/counselor-dialog/counselor-dialog",
-    "pages/activity/activity"
+    "pages/p-counselor-dialog/p-counselor-dialog",
+    "pages/activities/activities",
+    "pages/market-recommend/market-recommend"
   ],
   "window": {
     "navigationBarTextStyle": "black",

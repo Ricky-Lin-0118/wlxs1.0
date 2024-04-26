@@ -1,0 +1,123 @@
+.container {
+  display: flex;
+}
+
+.banner-img{
+  width: 100%; /* 设置图片宽度为视口宽度 */
+}
+
+.tag {
+  font-size: 25rpx;
+  color: rgb(128, 126, 126);
+  margin-right: 10rpx;
+  background-color: rgba(44, 155, 219, 0.205);
+  border-radius: 10rpx;
+  padding: 6rpx;
+}
+
+.viewers {
+  font-size: 25rpx;
+  color: rgba(153, 153, 153, 0.521);
+  margin-left: 6rpx;
+  margin-top: 4rpx;
+}
+
+.message {
+  font-size: 25rpx;
+  color: rgba(23, 131, 255, 0.993);
+  margin-right: 10rpx;
+  background-color: rgba(12, 158, 255, 0.336);
+  border-radius: 20rpx;
+  padding: 6rpx;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 10rpx 10rpx;
+}
+
+.left {
+  display: flex;
+  padding-left: 20rpx;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  padding-right: 20rpx;
+}
+
+.avatar-area {
+  margin-right: 20rpx;
+}
+.avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50rpx; /* 设置头像为圆形 */
+}
+.info-area {
+  display: flex;
+  flex-direction: column; /* 子元素垂直方向排列 */
+  justify-content: space-between; /* 垂直方向上均匀分布子元素 */
+}
+
+.name {
+  font-size: 25rpx;
+  font-weight: 550;
+  color: #BBBBBB;
+  margin-bottom: 10rpx;
+}
+
+.duration {
+  font-size: 24rpx;
+  background-color: lightgray;
+  color: white;
+  border-radius: 8rpx; /* 设置边框的弧度 */
+  margin-left: 20rpx; /* 设置姓名和工作时长之间的间距 */
+  padding: 4rpx 4rpx 4rpx 4rpx; /* 设置内边距 */
+}
+.intro {
+  font-size: 30rpx;
+  color: #666;
+  margin-bottom: 10rpx;
+  margin-top: 10rpx;
+}
+.tags {
+  font-size: 24rpx;
+  background-color: lightskyblue;
+  color: rgb(43, 41, 41);
+  border-radius: 16rpx; /* 设置边框的弧度 */
+  margin-left: 20rpx; /* 设置姓名和工作时长之间的间距 */
+  padding: 6rpx 12rpx 6rpx 12rpx; /* 设置内边距 */
+}
+.getMore{
+  display: flex;
+  justify-content: center;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+ color: #9f9f9f;
+}
+
+.comment {
+  font-size: smaller;
+  padding: 12rpx;
+  padding-bottom: 40rpx;
+  color: #BBBBBB;
+}
+
+.area {
+  display: flex;
+  padding: 12rpx;
+}
+
+.area-comment {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1rpx solid #ccc; /* 分割线 */
+}
+
+.blank {
+  height: 30rpx;
+}
